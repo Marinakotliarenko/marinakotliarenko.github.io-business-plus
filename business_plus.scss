@@ -1,0 +1,390 @@
+
+@font-face {
+  font-family: 'PNR';
+  src: url('fonts/webfontkit-20161127-070003/PNR.otf');
+  src: url('fonts/webfontkit-20161127-070003/pnr-webfont.woff2') format('woff2'),
+          url('fonts/webfontkit-20161127-070003/pnr-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------RESET----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+body ul, body ol, body li {
+  list-style:none;
+  padding: 0;
+}
+ body ul,body figure {
+  margin: 0;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------MIXINS---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+$xs-width: 576px;
+$sm-width: 768px;
+$md-width: 992px;
+$lg-width: 1200px;
+
+@mixin xs {
+  @media (min-width: #{$xs-width}) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: #{$sm-width}) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: #{$md-width}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: #{$lg-width}) {
+    @content;
+  }
+}
+$font-base: 14px;
+@mixin open-sans ($font-size){
+  font: $font-size 'Open Sans', sans-serif;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------multipurpose classes----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+a:link, a:visited {
+  @include open-sans($font-base);
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  -webkit-transition:  all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+body a:hover, body a:active {
+  color: #ffaf36;
+  text-decoration: none;
+}
+.margin-l-base {
+  margin-left: 5%;
+}
+.heading-1 {
+  font: 700 18px 'Raleway', sans-serif;
+  line-height: 24px;
+  color: #1c1c1c;
+  text-transform: uppercase
+}
+.font-large {
+  font-size: 30px;
+  font-weight: 800;
+}
+.subheading {
+  font: italic 16px 'Lora', serif;
+  color: #1c1c1c;
+  line-height: 30px;
+}
+.posted-details {
+  font: 600 13px PNR, sans-serif;
+  line-height: 24px;
+  text-transform: uppercase
+}
+.facebook-icon .icon-facebook-circled {
+  margin-bottom: 0.1em;
+  color: #496fa5;
+}
+.twitter-icon .icon-twitter-circled{
+  margin-bottom: 0.1em;
+  color: #00baef;
+}
+.google-plus-icon .icon-gplus-circled {
+  margin-bottom: 0.1em;
+  color: #eb4125;
+}
+.size-icon-circled {
+  font-size: 56px;
+}
+
+.call-to-action{
+  &:link, &:visited   {
+    max-width: 151px;
+    max-height: 51px;
+    border: 2px solid #ffaf36;
+    margin-right: 15px;
+    font: 700 13px 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #ffaf36;
+    text-align: center;
+    line-height: 4;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.size-icon-squared {
+  font-size: 30px;
+}
+.hover-transition{
+  transition: all 0.3s ease-out;
+  -webkit-transition:  all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+.text-white {
+  color: white;
+}
+.bg-transp {
+  background-color: transparent;
+}
+.form-border {
+  border: 1px solid #373839;
+}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+body {
+  font-size: 14px;
+}
+.wrapper {
+  @include open-sans($font-base);
+  color: #585858;
+}
+.site-header {
+  z-index: 10;
+  width: 100%;
+  height: 95px;
+  position: absolute;
+  border-bottom:  1px solid rgba(221, 228, 234, 0.15);
+  .site-logo {
+    margin-top: 0.5rem;
+    .logo-img {
+      width: 164px;
+      height: 34px;
+    }
+  }
+  .company-phone {
+    margin-top: 2rem;
+    @include md {
+      .phone {
+        padding-left: 13%;
+        border-left: 1px solid rgba(221, 228, 234, 0.15);
+        .phone-img {
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  .main-navigation {
+    margin-top: 2rem;
+  }
+}
+.banner{
+  height: 395px;
+  background: #000;
+  overflow: hidden;
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+  }
+}
+.blog-page {
+  .container {
+    padding-top: 6.6%;
+    padding-bottom: 6.6%;
+    position: relative;
+    &::before{
+      position: absolute;
+      bottom: 0;
+      right: 60px;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-left: 80px solid transparent;
+      border-right: 80px solid transparent;
+      border-bottom: 101px solid #36a8ff;
+    }
+    &::after{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-left: 70px solid transparent;
+      border-right: 70px solid transparent;
+      border-bottom: 70px solid #ffaf36;
+    }
+  }
+  .blog-page-header {
+    margin-bottom: 2%;
+  }
+  .blog-post {
+    padding-bottom: 0.5%;
+    border-bottom: 1px solid #e6e9ee;
+    margin-bottom: 6%;
+    & li:last-child {
+      margin-bottom: 2.8%;
+    }
+    .blog-post-header {
+      margin-bottom: 1%;
+    }
+    .blog-post-content {
+      margin-bottom: 2%;
+      .blog-post-pic {
+        width: 100%;
+        margin-bottom: 3.8%;
+      }
+      .blog-post-text {
+        line-height: 28px;
+      }
+    }
+    .blog-post-footer {
+      margin-bottom: 5%;
+      .share {
+        vertical-align: 15px;
+        text-transform: uppercase;
+      }
+      .social-item {
+        margin: 0;
+        &:hover {
+          opacity: 0.6;
+        }
+        [class^="icon-"]:before, [class*=" icon-"]:before {
+          margin: 0 1px;
+        }
+      }
+    }
+  }
+
+  .pagination-item {
+    width: 51px;
+    height: 51px;
+    margin: 0 3px;
+    border: 2px solid #2a2b2c;
+    text-align: center;
+    line-height: 3.5;
+    a{
+      font-size: 18px;
+      color: #2a2b2c;
+      &:hover{
+        //color: #ffaf36;
+      }
+    }
+    &:hover{
+      border: 2px solid #ffaf36;
+      color: #ffaf36;
+    }
+
+  }
+  .container {
+    position: relative;
+  }
+}
+
+.site-footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2a2b2c;
+  .logo {
+    display: block;
+    margin-top: 30%;
+  }
+  .site-footer-copyright {
+    margin-top: 1em;
+  }
+  .footer-social-icons {
+    margin-top: 2em;
+    .facebook-icon  {
+      color: #8a8a8a;
+      &:hover {
+        color: #ffaf36;
+      }
+    }
+    .twitter-icon  {
+      color: #8a8a8a;
+      &:hover {
+        color: #ffaf36;
+      }
+    }
+    .google-plus-icon  {
+      color: #8a8a8a;
+      &:hover {
+        color: #ffaf36;
+      }
+    }
+    .linkedin-icon  {
+      color: #8a8a8a;
+      &:hover {
+        color: #ffaf36;
+      }
+    }
+  }
+  .footer-nav {
+    margin-top: 1em;
+    .footer-nav-item {
+      position: relative;
+      padding: 1em 0 1em 25px ;
+      border-bottom: 1px solid #373839;
+      &::before{
+        position: absolute;
+        top: 1.5em;
+        left: 0;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid #ffaf36;
+      }
+      a{
+        font-size: 13px;
+        font-weight: 600;
+        color: #7b7b7c;
+      }
+    }
+  }
+  .form {
+    margin-top: 2rem;
+    .name-email {
+      display: inline-block;
+      width: 50%;
+      height: 47px;
+      border: 1px solid #373839;
+      &[placeholder]  {
+        padding: 1em;
+        color: #737476;
+      }
+    }
+    .comment {
+      width: 100%;
+      resize: none;
+      &[placeholder]  {
+        padding: 1em;
+        color: #737476;
+      }
+    }
+
+    .submit-button{
+      display: block;
+      width: 151px;
+      height: 51px;
+      border: 2px solid #ffaf36;
+      margin-top: 0.5rem;
+      border-radius: 0;
+      font: 700 13px 'Raleway', sans-serif;
+      text-transform: uppercase;
+      color: #ffaf36;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+
+
+
+

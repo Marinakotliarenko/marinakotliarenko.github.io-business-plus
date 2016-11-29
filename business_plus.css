@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'PNR';
+  src: url("fonts/webfontkit-20161127-070003/PNR.otf");
+  src: url("fonts/webfontkit-20161127-070003/pnr-webfont.woff2") format("woff2"), url("fonts/webfontkit-20161127-070003/pnr-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------RESET----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+body ul, body ol, body li {
+  list-style: none;
+  padding: 0; }
+
+body ul, body figure {
+  margin: 0; }
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------MIXINS---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------multipurpose classes----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+a:link, a:visited {
+  font: 14px "Open Sans", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out; }
+
+body a:hover, body a:active {
+  color: #ffaf36;
+  text-decoration: none; }
+
+.margin-l-base {
+  margin-left: 5%; }
+
+.heading-1 {
+  font: 700 18px 'Raleway', sans-serif;
+  line-height: 24px;
+  color: #1c1c1c;
+  text-transform: uppercase; }
+
+.font-large {
+  font-size: 30px;
+  font-weight: 800; }
+
+.subheading {
+  font: italic 16px 'Lora', serif;
+  color: #1c1c1c;
+  line-height: 30px; }
+
+.posted-details {
+  font: 600 13px PNR, sans-serif;
+  line-height: 24px;
+  text-transform: uppercase; }
+
+.facebook-icon .icon-facebook-circled {
+  margin-bottom: 0.1em;
+  color: #496fa5; }
+
+.twitter-icon .icon-twitter-circled {
+  margin-bottom: 0.1em;
+  color: #00baef; }
+
+.google-plus-icon .icon-gplus-circled {
+  margin-bottom: 0.1em;
+  color: #eb4125; }
+
+.size-icon-circled {
+  font-size: 56px; }
+
+.call-to-action:link, .call-to-action:visited {
+  max-width: 151px;
+  max-height: 51px;
+  border: 2px solid #ffaf36;
+  margin-right: 15px;
+  font: 700 13px 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: #ffaf36;
+  text-align: center;
+  line-height: 4; }
+.call-to-action:hover {
+  opacity: 0.6; }
+
+.size-icon-squared {
+  font-size: 30px; }
+
+.hover-transition {
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out; }
+
+.text-white {
+  color: white; }
+
+.bg-transp {
+  background-color: transparent; }
+
+.form-border {
+  border: 1px solid #373839; }
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+body {
+  font-size: 14px; }
+
+.wrapper {
+  font: 14px "Open Sans", sans-serif;
+  color: #585858; }
+
+.site-header {
+  z-index: 10;
+  width: 100%;
+  height: 95px;
+  position: absolute;
+  border-bottom: 1px solid rgba(221, 228, 234, 0.15); }
+  .site-header .site-logo {
+    margin-top: 0.5rem; }
+    .site-header .site-logo .logo-img {
+      width: 164px;
+      height: 34px; }
+  .site-header .company-phone {
+    margin-top: 2rem; }
+    @media (min-width: 992px) {
+      .site-header .company-phone .phone {
+        padding-left: 13%;
+        border-left: 1px solid rgba(221, 228, 234, 0.15); }
+        .site-header .company-phone .phone .phone-img {
+          margin-right: 3px; } }
+  .site-header .main-navigation {
+    margin-top: 2rem; }
+
+.banner {
+  height: 395px;
+  background: #000;
+  overflow: hidden; }
+  .banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.4; }
+
+.blog-page .container {
+  padding-top: 6.6%;
+  padding-bottom: 6.6%;
+  position: relative; }
+  .blog-page .container::before {
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 101px solid #36a8ff; }
+  .blog-page .container::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 70px solid #ffaf36; }
+.blog-page .blog-page-header {
+  margin-bottom: 2%; }
+.blog-page .blog-post {
+  padding-bottom: 0.5%;
+  border-bottom: 1px solid #e6e9ee;
+  margin-bottom: 6%; }
+  .blog-page .blog-post li:last-child {
+    margin-bottom: 2.8%; }
+  .blog-page .blog-post .blog-post-header {
+    margin-bottom: 1%; }
+  .blog-page .blog-post .blog-post-content {
+    margin-bottom: 2%; }
+    .blog-page .blog-post .blog-post-content .blog-post-pic {
+      width: 100%;
+      margin-bottom: 3.8%; }
+    .blog-page .blog-post .blog-post-content .blog-post-text {
+      line-height: 28px; }
+  .blog-page .blog-post .blog-post-footer {
+    margin-bottom: 5%; }
+    .blog-page .blog-post .blog-post-footer .share {
+      vertical-align: 15px;
+      text-transform: uppercase; }
+    .blog-page .blog-post .blog-post-footer .social-item {
+      margin: 0; }
+      .blog-page .blog-post .blog-post-footer .social-item:hover {
+        opacity: 0.6; }
+      .blog-page .blog-post .blog-post-footer .social-item [class^="icon-"]:before, .blog-page .blog-post .blog-post-footer .social-item [class*=" icon-"]:before {
+        margin: 0 1px; }
+.blog-page .pagination-item {
+  width: 51px;
+  height: 51px;
+  margin: 0 3px;
+  border: 2px solid #2a2b2c;
+  text-align: center;
+  line-height: 3.5; }
+  .blog-page .pagination-item a {
+    font-size: 18px;
+    color: #2a2b2c; }
+  .blog-page .pagination-item:hover {
+    border: 2px solid #ffaf36;
+    color: #ffaf36; }
+.blog-page .container {
+  position: relative; }
+
+.site-footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2a2b2c; }
+  .site-footer .logo {
+    display: block;
+    margin-top: 30%; }
+  .site-footer .site-footer-copyright {
+    margin-top: 1em; }
+  .site-footer .footer-social-icons {
+    margin-top: 2em; }
+    .site-footer .footer-social-icons .facebook-icon {
+      color: #8a8a8a; }
+      .site-footer .footer-social-icons .facebook-icon:hover {
+        color: #ffaf36; }
+    .site-footer .footer-social-icons .twitter-icon {
+      color: #8a8a8a; }
+      .site-footer .footer-social-icons .twitter-icon:hover {
+        color: #ffaf36; }
+    .site-footer .footer-social-icons .google-plus-icon {
+      color: #8a8a8a; }
+      .site-footer .footer-social-icons .google-plus-icon:hover {
+        color: #ffaf36; }
+    .site-footer .footer-social-icons .linkedin-icon {
+      color: #8a8a8a; }
+      .site-footer .footer-social-icons .linkedin-icon:hover {
+        color: #ffaf36; }
+  .site-footer .footer-nav {
+    margin-top: 1em; }
+    .site-footer .footer-nav .footer-nav-item {
+      position: relative;
+      padding: 1em 0 1em 25px;
+      border-bottom: 1px solid #373839; }
+      .site-footer .footer-nav .footer-nav-item::before {
+        position: absolute;
+        top: 1.5em;
+        left: 0;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid #ffaf36; }
+      .site-footer .footer-nav .footer-nav-item a {
+        font-size: 13px;
+        font-weight: 600;
+        color: #7b7b7c; }
+  .site-footer .form {
+    margin-top: 2rem; }
+    .site-footer .form .name-email {
+      display: inline-block;
+      width: 50%;
+      height: 47px;
+      border: 1px solid #373839; }
+      .site-footer .form .name-email[placeholder] {
+        padding: 1em;
+        color: #737476; }
+    .site-footer .form .comment {
+      width: 100%;
+      resize: none; }
+      .site-footer .form .comment[placeholder] {
+        padding: 1em;
+        color: #737476; }
+    .site-footer .form .submit-button {
+      display: block;
+      width: 151px;
+      height: 51px;
+      border: 2px solid #ffaf36;
+      margin-top: 0.5rem;
+      border-radius: 0;
+      font: 700 13px 'Raleway', sans-serif;
+      text-transform: uppercase;
+      color: #ffaf36; }
+      .site-footer .form .submit-button:hover {
+        opacity: 0.6; }
+
+/*# sourceMappingURL=business_plus.css.map */
