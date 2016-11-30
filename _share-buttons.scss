@@ -1,0 +1,15 @@
+.share-buttons{
+  .share {
+    vertical-align: 15px;
+    text-transform: uppercase;
+  }
+  .social-item {
+    margin: 0;
+    &:hover {
+      opacity: 0.6;
+    }
+    [class^="icon-"]:before, [class*=" icon-"]:before {
+      margin: 0 1px;
+    }
+  }
+}
