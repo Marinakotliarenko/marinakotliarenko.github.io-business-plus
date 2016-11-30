@@ -1,3 +1,12 @@
+/*-------------------------------------RESET----------------------------------------*/
+body ul, body ol, body li {
+  list-style:none;
+  padding: 0;
+}
+body ul,body figure {
+  margin: 0;
+}
+/*----------------------------------------------------------------------------------*/
 $xs-width: 576px;
 $sm-width: 768px;
 $md-width: 992px;
@@ -23,10 +32,19 @@ $lg-width: 1200px;
     @content;
   }
 }
-
+@import "site-heder-banner";
+@import "site-footer";
+/*----------------------------------------------------------------------------------*/
 $font-base: 14px;
 @mixin open-sans ($font-size){
   font: $font-size 'Open Sans', sans-serif;
+}
+.wrapper {
+  @include open-sans($font-base);
+  color: #585858;
+}
+body {
+  font-size: 14px;
 }
 .heading {
   font: 700 18px 'Raleway', sans-serif;
@@ -66,11 +84,6 @@ a:hover, a:active {
 }
 .margin-l-base {
   margin-left: 3em;
-}
-.posted-details {
-  font: 600 13px PNR, sans-serif;
-  line-height: 24px;
-  text-transform: uppercase
 }
 .facebook-icon .icon-facebook-circled {
   margin-bottom: 0.1em;
@@ -121,8 +134,9 @@ a:hover, a:active {
 .form-border {
   border: 1px solid #373839;
 }
-.admin-img{
-  border-radius: 50%;
+.page-content-header {
+  margin-top:6.3rem;
+  margin-bottom: 1.5rem
 }
 .pagination-item {
   display: block;

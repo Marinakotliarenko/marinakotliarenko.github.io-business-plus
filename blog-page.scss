@@ -1,0 +1,29 @@
+/*-------------------------------------IMPORTS---------------------------------------*/
+@import "application";
+@import "share-buttons";
+@import "_blog-post";
+/*----------------------------------------------------------------------------------*/
+.page-content {
+  .container {
+    padding-bottom:  6.3rem;
+  }
+}
+.blog-post {
+  margin-bottom: 4rem;
+  li:last-child &{
+    margin-bottom: 2.5rem;
+  }
+  .blog-post-content {
+    margin-bottom: 1.5rem;
+  }
+  .blog-post-footer {
+    margin-bottom: 3.8rem;
+  }
+}
+
+
+
+
+
+
+
