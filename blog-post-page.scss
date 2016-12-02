@@ -1,5 +1,34 @@
 /*-------------------------------------IMPORTS---------------------------------------*/
 @import "application";
-@import "share-buttons";
 @import "_blog-post";
+
 /*----------------------------------------------------------------------------------*/
+.author-details{
+  padding-bottom: 4.5rem;
+  border-bottom: 1px solid #e6e9ee;
+  margin-bottom: 4rem;
+  img{
+    //margin-right: 10px;
+  }
+  .about-author {
+    position: relative;
+    padding-right: 5.8rem;
+    padding-left: 3em;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 97.5px;
+      left: -10px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+
+      border-right:10px solid #36a8ff;
+    }
+    //margin-left: 2em;
+  }
+}
+.comments-header {
+  margin-bottom: 3rem;
+}

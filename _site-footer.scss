@@ -11,6 +11,9 @@
   }
   .footer-social-icons {
     margin-top: 2em;
+    .social-icon-size {
+      font-size: 30px;
+    }
     .facebook-icon  {
       color: #8a8a8a;
       &:hover {
@@ -60,11 +63,17 @@
           border-bottom: 3px solid transparent;
           border-left: 3px solid #ffaf36;
         }
+        &:hover {
+          color: #ffaf36;
+        }
       }
     }
   }
   .form {
     margin-top: 2rem;
+    .form-border {
+      border: 1px solid #373839;
+    }
     .name-email {
       display: inline-block;
       width: 50%;

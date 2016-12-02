@@ -1,34 +1,22 @@
-@font-face {
-  font-family: 'PNR';
-  src: url('fonts/webfontkit-20161127-070003/PNR.otf');
-  src: url('fonts/webfontkit-20161127-070003/pnr-webfont.woff2') format('woff2'),
-  url('fonts/webfontkit-20161127-070003/pnr-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "fonts";
+@import "share-buttons";
+@import "quotation";
 .blog-post {
   font: 14px "Open Sans", sans-serif;
   color: #585858;
-  border-bottom: 1px solid #e6e9ee;
+
   .blog-post-header {
     margin-bottom: 0.5rem;
-    .heading {
-      font: 700 18px 'Raleway', sans-serif;
-      line-height: 24px;
-      color: #1c1c1c;
-      text-transform: uppercase
-    }
-    .posted-details {
-      font: 600 13px PNR, sans-serif;
-      line-height: 24px;
-      text-transform: uppercase
-    }
   }
-  .blog-post-pic {
-    width: 100%;
+  .blog-post-content {
     margin-bottom: 2rem;
+    .blog-post-pic {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
-  .blog-post-text {
-    line-height: 28px;
+  .blog-post-footer {
+    margin-bottom: 3.8rem;
   }
+
 }

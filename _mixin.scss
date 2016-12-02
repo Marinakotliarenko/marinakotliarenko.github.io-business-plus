@@ -1,0 +1,29 @@
+
+$xs-width: 576px;
+$sm-width: 768px;
+$md-width: 992px;
+$lg-width: 1200px;
+
+@mixin xs {
+  @media (min-width: #{$xs-width}) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: #{$sm-width}) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: #{$md-width}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: #{$lg-width}) {
+    @content;
+  }
+}
+@mixin open-sans ($font-size){
+  font: $font-size 'Open Sans', sans-serif;
+}
