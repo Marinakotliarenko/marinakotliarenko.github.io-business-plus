@@ -12,9 +12,15 @@ body {
 .font-custom {
   font: italic 16px 'Lora', serif;
 }
+.text-proxima {
+  font: 600 13px 'PNR', sans-serif;
+}
 .font-huge {
   font-size: 30px;
   font-weight: 800;
+}
+.font-bold {
+  font-weight: 700;
 }
 .font-large {
   font-size: 16px;
@@ -36,6 +42,12 @@ body {
 }
 .text-pale-blue {
   color: #dbefff;
+}
+.text-dark-gray{
+  color: #757575;
+}
+.text-light-orange {
+  color: #ffaf36;
 }
 a{
   @include open-sans($font-base);

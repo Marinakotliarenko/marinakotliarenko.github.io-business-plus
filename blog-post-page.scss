@@ -1,15 +1,12 @@
 /*-------------------------------------IMPORTS---------------------------------------*/
 @import "application";
 @import "_blog-post";
-
+@import "comment";
 /*----------------------------------------------------------------------------------*/
 .author-details{
   padding-bottom: 4.5rem;
   border-bottom: 1px solid #e6e9ee;
   margin-bottom: 4rem;
-  img{
-    //margin-right: 10px;
-  }
   .about-author {
     position: relative;
     padding-right: 5.8rem;
@@ -26,9 +23,9 @@
 
       border-right:10px solid #36a8ff;
     }
-    //margin-left: 2em;
   }
 }
 .comments-header {
   margin-bottom: 3rem;
+
 }

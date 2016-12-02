@@ -26,9 +26,15 @@ body {
 .font-custom {
   font: italic 16px 'Lora', serif; }
 
+.text-proxima {
+  font: 600 13px 'PNR', sans-serif; }
+
 .font-huge {
   font-size: 30px;
   font-weight: 800; }
+
+.font-bold {
+  font-weight: 700; }
 
 .font-large {
   font-size: 16px; }
@@ -50,6 +56,12 @@ body {
 
 .text-pale-blue {
   color: #dbefff; }
+
+.text-dark-gray {
+  color: #757575; }
+
+.text-light-orange {
+  color: #ffaf36; }
 
 a {
   font: 14px "Open Sans", sans-serif;
@@ -271,12 +283,6 @@ body .active {
         padding: 1em;
         color: #737476; }
 
-@font-face {
-  font-family: 'PNR';
-  src: url("fonts/webfontkit-20161127-070003/PNR.otf");
-  src: url("fonts/webfontkit-20161127-070003/pnr-webfont.woff2") format("woff2"), url("fonts/webfontkit-20161127-070003/pnr-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 .share-buttons .share {
   vertical-align: 15px;
   text-transform: uppercase; }
