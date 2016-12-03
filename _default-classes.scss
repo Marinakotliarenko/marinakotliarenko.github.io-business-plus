@@ -70,20 +70,24 @@ a:hover, a:active {
     border-color: #ffaf36;
   }
 }
-.facebook-icon .icon-facebook-circled {
-  margin-bottom: 0.1em;
+.facebook-icon {
   color: #496fa5;
 }
-.twitter-icon .icon-twitter-circled{
-  margin-bottom: 0.1em;
+.twitter-icon {
   color: #00baef;
 }
-.google-plus-icon .icon-gplus-circled {
-  margin-bottom: 0.1em;
+.google-plus-icon {
   color: #eb4125;
 }
 .share-icon-size {
   font-size: 56px;
+}
+.reply-icon {
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid #ffaf36;
+  border-radius: 50%;
+  color: #ffaf36;
 }
 .call-to-action{
   width: 151px;
@@ -116,12 +120,22 @@ a:hover, a:active {
 .bg-blue {
   background-color: #36a8ff;
 }
-.page-content-header {
-  margin-top:6.3rem;
-  margin-bottom: 1.5rem
+.bg-light-blue {
+  background-color: #eaeff3;
 }
-.pagination {
-
+.page-content-header {
+  width: 100%;
+  margin-top:6.3rem;
+  margin-bottom: 1.5rem;
+}
+.form-border-b {
+  border-bottom: 1px solid #dce3e8;
+}
+.border-none {
+  border: none;
+}
+.resize-none {
+  resize: none;
 }
 .pagination-item {
   display: block;

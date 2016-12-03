@@ -8,7 +8,7 @@
     <script type="text/javascript" src="js-libraries/bootstrap-4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800|Raleway:400,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/fontello-06c9167c/css/fontello.css">
+    <link rel="stylesheet" href="fonts/fontello-bd42855e/css/fontello.css">
     <title>B PLUS/blog-post</title>
 </head>
 <body>
@@ -66,7 +66,7 @@
                     <h2 class="font-custom line-h-big text-black">Our featured Post</h2>
                 </header>
                 <article class="blog-post row">
-                    <header class="blog-post-header row col-md-12">
+                    <header class="blog-post-header row col-lg-12">
                         <img width="60" height="60" class="rounded-circle  col-lg-1" src="images/layer-16.jpg" alt="Admin image">
                         <div class="col-lg-9">
                             <h1 class="heading text-black text-uppercase line-h-medium">Blog Heading Here Blog
@@ -160,40 +160,113 @@
                     <h1 class="heading font-huge text-black text-uppercase line-h-medium">Comments</h1>
                     <h2 class="font-custom line-h-big text-black">Suggestions & feedback</h2>
                 </header>
-                <section class="comment row">
-                    <aside class="col-lg-1" >
-                        <img class="rounded-circle" width="83" height="83"  src="images/layer-18.jpg" alt="User image">
-                    </aside>
-                    <div class="col-lg-10 ml-2 ">
-                        <p class="comment-heading text-proxima font-bold text-uppercase ">Name here
-                            <time class="font-semi-bold text-light-orange" datetime="2015-10-11">October- 11- 2015</time>
-                        </p>
+                <ul class="comments-list">
+                    <li class="comment-item">
+                        <div class="comment-body row">
+                            <aside class="col-lg-1" >
+                                <img class="rounded-circle" width="83" height="83"  src="images/layer-18.jpg" alt="User image">
+                            </aside>
+                            <div class="col-lg-10 ml-2 ">
+                                <p class="comment-heading text-proxima font-bold text-uppercase">Name here
+                                    <time class="font-semi-bold text-light-orange" datetime="2015-10-11">October- 11- 2015</time>
+                                </p>
 
-                        <p class="blog-post-text">
-                            It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout. The point of using
-                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                            using 'Content here, content here', making.
-                        </p>
-                        <a href="blog-post.html">
-                            <span class="reply-icon">
-                                <i class=" reply-icon-size" aria-hidden="true"></i>
-                            </span>
-                        </a>
-                    </div>
-                </section>
+                                <p class="blog-post-text mb-2">
+                                    It is a long established fact that a reader will be distracted by the readable content of a
+                                    page when looking at its layout. The point of using
+                                    Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                    using 'Content here, content here', making.
+                                </p>
+                                <a href="blog-post.html">
+                                    <span class="reply-icon">
+                                       <i class="icon-reply" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="comment-item">
+                        <div class="comment-body row">
+                            <aside class="col-lg-1" >
+                                <img class="rounded-circle" width="83" height="83"  src="images/layer-18.jpg" alt="User image">
+                            </aside>
+                            <div class="col-lg-10 ml-2 ">
+                                <p class="comment-heading text-proxima font-bold text-uppercase ">Name here
+                                    <time class="font-semi-bold text-light-orange" datetime="2015-10-11">October- 11- 2015</time>
+                                </p>
+
+                                <p class="blog-post-text mb-2">
+                                    It is a long established fact that a reader will be distracted by the readable content of a
+                                    page when looking at its layout. The point of using
+                                    Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                    using 'Content here, content here', making.
+                                </p>
+                                <a  href="blog-post.html">
+                                    <span class="reply-icon">
+                                        <i class="icon-reply" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <ul class="reply-comments">
+                        <li class="comment-item">
+                            <div class="comment-body row">
+                                <aside class="col-lg-1" >
+                                    <img class="rounded-circle" width="83" height="83"  src="images/layer-18.jpg" alt="User image">
+                                </aside>
+                                <div class="col-lg-10 ml-2 ">
+                                    <p class="comment-heading text-proxima font-bold text-uppercase ">Name here
+                                        <time class="font-semi-bold text-light-orange" datetime="2015-10-11">October- 11- 2015</time>
+                                    </p>
+
+                                    <p class="blog-post-text mb-2">
+                                        It is a long established fact that a reader will be distracted by the readable content of a
+                                        page when looking at its layout. The point of using
+                                        Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                        using 'Content here, content here', making.
+                                    </p>
+                                    <a href="blog-post.html">
+                                        <span class="reply-icon">
+                                           <i class="icon-reply" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </ul>
             </section>
-            <section class="submit-comment">
-                <form >
-                    <input class="name " type="text"  name="follow-up[name]" placeholder="Name *">
-                    <input class="email " type="email"  name="follow-up[email]" placeholder="Email Address *">
-                    <input class="phone " type="tel"  name="follow-up[phone]" placeholder="PHone number *">
-                    <textarea class="comment " name="follow-up[comment]" cols="1" rows="1" placeholder="Comment *">
-                    </textarea>
-                    <button class="submit-button call-to-action btn hover-transition" type="submit" name="follow-up[submit]">Submit Now
-                    </button>
-                </form>
-            </section>
+        </div>
+    </section>
+    <section class="submit-comment bg-light-blue">
+        <div class="container pyramids">
+            <div class="row">
+                <header class="page-content-header">
+                    <h1 class="heading font-huge text-black text-uppercase line-h-medium">Leave your comment</h1>
+                    <h2 class="font-custom line-h-big text-black">Submit your comments now</h2>
+                </header>
+
+                    <form class="col-lg-12">
+                        <ul>
+                            <li class="form-border-b">
+                                <input class="form-name form-item form-control bg-transp border-none text-uppercase" type="text"  name="follow-up[name]" placeholder="Name *">
+                            </li>
+                            <li class="form-border-b">
+                                <input class="form-email form-item form-control bg-transp border-none text-uppercase" type="email"  name="follow-up[email]" placeholder="Email Address *">
+                            </li>
+                            <li class="form-border-b">
+                                <input class="form-phone form-item form-control bg-transp border-none text-uppercase" type="tel"  name="follow-up[phone]" placeholder="PHone number *">
+                            </li>
+                            <li class="form-border-b">
+                                <textarea class="form-comment form-item form-control bg-transp border-none resize-none text-uppercase" name="follow-up[comment]" cols="10" rows="1" placeholder="Comment *"></textarea>
+                            </li>
+                        </ul>
+                        <button class="submit-button call-to-action btn hover-transition bg-transp" type="submit" name="follow-up[submit]">Submit Now
+                        </button>
+                    </form>
+
+            </div>
         </div>
     </section>
     <footer id="site-footer"  class="site-footer" role="contentinfo">
@@ -263,7 +336,7 @@
                     <form role="form" class="form">
                         <input class="name-email  bg-transp form-border" type="text" id="contact-form-name" name="follow-up[name]" placeholder="Name *"
                         ><input class="name-email  bg-transp form-border" type="email" id="contact-form-email" name="follow-up[email]" placeholder="Email *"
-                    ><textarea class="comment  bg-transp form-border" name="follow-up[comment]" id="contact-form-comment" cols="50" rows="5" placeholder="Comment *"></textarea>
+                    ><textarea class="form-comment  bg-transp form-border" name="follow-up[comment]" id="contact-form-comment" cols="50" rows="5" placeholder="Comment *"></textarea>
                         <button class="submit-button call-to-action btn hover-transition bg-transp" type="submit" name="follow-up[submit]">Submit Now
                         </button>
                     </form>

@@ -82,20 +82,24 @@ body .active {
   color: #ffaf36;
   border-color: #ffaf36; }
 
-.facebook-icon .icon-facebook-circled {
-  margin-bottom: 0.1em;
+.facebook-icon {
   color: #496fa5; }
 
-.twitter-icon .icon-twitter-circled {
-  margin-bottom: 0.1em;
+.twitter-icon {
   color: #00baef; }
 
-.google-plus-icon .icon-gplus-circled {
-  margin-bottom: 0.1em;
+.google-plus-icon {
   color: #eb4125; }
 
 .share-icon-size {
   font-size: 56px; }
+
+.reply-icon {
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid #ffaf36;
+  border-radius: 50%;
+  color: #ffaf36; }
 
 .call-to-action {
   width: 151px;
@@ -127,9 +131,22 @@ body .active {
 .bg-blue {
   background-color: #36a8ff; }
 
+.bg-light-blue {
+  background-color: #eaeff3; }
+
 .page-content-header {
+  width: 100%;
   margin-top: 6.3rem;
   margin-bottom: 1.5rem; }
+
+.form-border-b {
+  border-bottom: 1px solid #dce3e8; }
+
+.border-none {
+  border: none; }
+
+.resize-none {
+  resize: none; }
 
 .pagination-item {
   display: block;
@@ -276,10 +293,9 @@ body .active {
       .site-footer .form .name-email[placeholder] {
         padding: 1em;
         color: #737476; }
-    .site-footer .form .comment {
-      width: 100%;
-      resize: none; }
-      .site-footer .form .comment[placeholder] {
+    .site-footer .form .form-comment {
+      width: 100%; }
+      .site-footer .form .form-comment[placeholder] {
         padding: 1em;
         color: #737476; }
 

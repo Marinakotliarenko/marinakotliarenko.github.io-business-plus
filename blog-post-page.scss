@@ -27,5 +27,28 @@
 }
 .comments-header {
   margin-bottom: 3rem;
+}
+.submit-comment{
+  .container {
+    padding-bottom: 101px;
+  }
+  .page-content-header {
+    margin-top: 0;
+    padding-top:6.3rem;
+  }
+.form-item {
+  &:hover, &:focus {
+    background: transparent;
+  }
+  &[placeholder]  {
+    padding: 2rem 0 0.5rem;
+    color: #757c81;
+  }
+  .form-comment {
+    display: block;
+    height: 13rem;
+  }
+}
+
 
 }
