@@ -1,0 +1,13 @@
+.form-item {
+  &:hover, &:focus {
+    background: transparent;
+  }
+  &[placeholder]  {
+    padding: 2rem 0 0.5rem;
+    color: #757c81;
+  }
+  .form-comment {
+    display: block;
+    height: 13rem;
+  }
+}
