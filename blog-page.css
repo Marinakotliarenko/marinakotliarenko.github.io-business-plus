@@ -100,6 +100,8 @@ body .active {
   border: 1px solid #ffaf36;
   border-radius: 50%;
   color: #ffaf36; }
+  .reply-icon:hover {
+    opacity: 0.6; }
 
 .call-to-action {
   width: 151px;

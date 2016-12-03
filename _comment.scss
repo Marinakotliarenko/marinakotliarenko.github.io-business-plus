@@ -1,15 +1,24 @@
 .comments {
-  .comment-item {
-    padding-bottom: 3rem;
-    border-bottom: 1px solid #e6e9ee;
-    &:last-child {
-      border-bottom: none;
+
+    .comment-body {
+      padding-bottom: 3rem;
+      border-bottom: 1px solid #e6e9ee;
+      margin-bottom: 2rem;
     }
-    margin-bottom: 2rem;
-  }
   .reply-comments {
     .comment-item {
       margin-left: 7.5rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid #e6e9ee;
+      margin-bottom: 2rem;
+      &:last-child {
+        border-bottom: none;
+      }
+      .comment-body {
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 0;
+      }
     }
   }
 }
