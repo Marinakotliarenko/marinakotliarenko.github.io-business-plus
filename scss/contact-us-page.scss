@@ -2,8 +2,12 @@
 @import "application";
 @import "form-item";
 /*----------------------------------------------------------------------------------*/
+.page-content {
+  margin-bottom: 6.3rem;
+}
 .page-content-header {
-  padding-top:6.3rem;
+  padding-top: 6.3rem;
+  margin-top: 0;
 }
 .submit-comment {
   .container {
