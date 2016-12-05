@@ -1,13 +1,8 @@
 /*-------------------------------------IMPORTS---------------------------------------*/
 @import "application";
-
 @import "form-item";
 /*----------------------------------------------------------------------------------*/
-.call-to-action {
-  //width: 300px;
-}
 .page-content-header {
-  //margin-top: 0;
   padding-top:6.3rem;
 }
 .submit-comment {
@@ -15,7 +10,23 @@
     padding-bottom: 101px;
   }
 }
-.address-pic {
+.address-section {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  width: 1140px;
+  height: 345px;
   background: #000;
-  opacity: 0.4;
+  .address-pic {
+    padding: 0;
+    background: #000;
+    opacity: 0.4;
+  }
+  .address{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translate(0, -50%);
+  }
 }
