@@ -27,3 +27,31 @@ $lg-width: 1200px;
 @mixin open-sans ($font-size){
   font: $font-size 'Open Sans', sans-serif;
 }
+@mixin transform ($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+@mixin translate ($x, $y) {
+  @include transform(translate($x, $y));
+}
+                     //to make placeholder mixin
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    @content;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

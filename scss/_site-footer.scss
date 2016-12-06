@@ -1,3 +1,5 @@
+@import "form-item";
+@import "mixin";
 .site-footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -9,36 +11,7 @@
   .site-footer-copyright {
     margin-top: 1em;
   }
-  .footer-social-icons {
-    margin-top: 2em;
-    .social-icon-size {
-      font-size: 30px;
-    }
-    .facebook-icon  {
-      color: #8a8a8a;
-      &:hover {
-        color: #ffaf36;
-      }
-    }
-    .twitter-icon  {
-      color: #8a8a8a;
-      &:hover {
-        color: #ffaf36;
-      }
-    }
-    .google-plus-icon  {
-      color: #8a8a8a;
-      &:hover {
-        color: #ffaf36;
-      }
-    }
-    .linkedin-icon  {
-      color: #8a8a8a;
-      &:hover {
-        color: #ffaf36;
-      }
-    }
-  }
+
   .footer-nav {
     margin-top: 1em;
     .footer-nav-item {
@@ -69,27 +42,28 @@
       }
     }
   }
-  .form {
+  .footer-form {
     margin-top: 2rem;
+    .form-item{
+      border-radius: 0;
+      &[placeholder]  {
+        padding: 1em;
+        color: #737476;
+      }
+     /* @include placeholder {
+        padding: 1em;
+        color: #737476;
+      }*/
+    }
     .form-border {
       border: 1px solid #373839;
     }
-    .name-email {
-      display: inline-block;
+    .form-name, .form-email {
       width: 50%;
       height: 47px;
-      border: 1px solid #373839;
-      &[placeholder]  {
-        padding: 1em;
-        color: #737476;
-      }
     }
     .form-comment {
       width: 100%;
-      &[placeholder]  {
-        padding: 1em;
-        color: #737476;
-      }
     }
   }
 }

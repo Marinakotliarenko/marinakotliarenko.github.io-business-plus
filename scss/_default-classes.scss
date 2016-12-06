@@ -70,28 +70,6 @@ a:hover, a:active {
     border-color: #ffaf36;
   }
 }
-.facebook-icon {
-  color: #496fa5;
-}
-.twitter-icon {
-  color: #00baef;
-}
-.google-plus-icon {
-  color: #eb4125;
-}
-.share-icon-size {
-  font-size: 56px;
-}
-.reply-icon {
-  padding: 6px;
-  font-size: 13px;
-  border: 1px solid #ffaf36;
-  border-radius: 50%;
-  color: #ffaf36;
-  &:hover {
-    opacity: 0.6;
-  }
-}
 .call-to-action{
   width: 151px;
   height: 51px;
@@ -111,7 +89,7 @@ a:hover, a:active {
   margin-top: 0.5rem;
   border-radius: 0;
 }
-.hover-transition{
+.hover-transition {
   transition: all 0.3s ease-out;
   -webkit-transition:  all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -155,31 +133,7 @@ a:hover, a:active {
     color: #ffaf36;
   }
 }
-.pyramids {
-  position: relative;
-  &::before{
-    position: absolute;
-    bottom: 0;
-    right: 60px;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 80px solid transparent;
-    border-right: 80px solid transparent;
-    border-bottom: 101px solid #36a8ff;
-  }
-  &::after{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-bottom: 70px solid #ffaf36;
-  }
-}
+
 .flex-items-xl-stretch {
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;

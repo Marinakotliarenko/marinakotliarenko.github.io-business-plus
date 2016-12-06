@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="js-libraries/bootstrap-4.0.0-alpha.5/dist/css/bootstrap-flex.min.css">
     <link rel="stylesheet" type="text/css" href="css/blog-page.css" >
     <script type="text/javascript" src="js-libraries/bootstrap-4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800|Raleway:400,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/fontello-bd42855e/css/fontello.css">
+    <link rel="stylesheet" href="fonts/fontello-ea4a6f4c/css/fontello.css">
     <title>B PLUS/blog</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
                 <nav id="site-navigation" class="main-navigation col-lg-8" role="navigation">
                    <ul class="flex-items-lg-right media">
                        <li class="margin-l-base">
-                           <a href="blog-page.html">Home</a>
+                           <a href="index.html">Home</a>
                        </li>
                        <li class="margin-l-base">
                            <a href="blog-page.html">About us</a>
@@ -45,7 +45,7 @@
                            <a class="active" href="blog-post-page.html">blog</a>
                        </li>
                        <li class="margin-l-base">
-                           <a href="blog-page.html">pages</a>
+                           <a href="pages-page.html">pages</a>
                       </li>
                        <li class="margin-l-base">
                            <a href="contact-us-page.html">Contact Us</a>
@@ -259,59 +259,59 @@
     <footer id="site-footer"  class="site-footer" role="contentinfo">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
-                    <a class="logo" href="blog-page.html">
+                <div class="col-lg-3">
+                    <a class="logo" href="index.html">
                         <img src="images/businessplus-logo.png" alt="BUSINESS PLUS"/>
                     </a>
                     <p class="site-footer-copyright">2015 © lawyer.</p>
                     <ul class="footer-social-icons media">
-                        <li class="footer-social-item">
-                            <a href="blog-page.html">
+                        <li class="social-item">
+                            <a href="">
                                 <span class="facebook-icon hover-transition">
-                                    <i class="icon-facebook-squared social-icon-size" aria-hidden="true"></i>
+                                    <i class="icon-facebook-1 social-icon social-icon-size" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </li>
                         <li class="social-item">
-                            <a href="blog-page.html">
+                            <a href="">
                                 <span class="twitter-icon hover-transition">
-                                    <i class="icon-twitter-squared social-icon-size" aria-hidden="true"></i>
+                                    <i class="icon-twitter-1 social-icon social-icon-size" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </li>
                         <li class="social-item">
-                            <a href="blog-page.html">
+                            <a href="">
                                 <span class="google-plus-icon hover-transition">
-                                    <i class="icon-gplus-squared social-icon-size" aria-hidden="true"></i>
+                                    <i class="icon-gplus-1 social-icon social-icon-size" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </li>
                         <li class="social-item">
-                            <a href="blog-page.html">
+                            <a href="">
                                 <span class="linkedin-icon hover-transition">
-                                    <i class="icon-linkedin-squared social-icon-size" aria-hidden="true"></i>
+                                    <i class="icon-linkedin-1 social-icon social-icon-size" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-2 offset-lg-2">
+                <div class="col-lg-2 offset-lg-1">
                     <h6 class="heading text-white text-uppercase line-h-medium">Navigation</h6>
                     <ul class="footer-nav">
                         <li class="footer-nav-item">
-                            <a class="font-small" href="blog-page.html">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="blog-page.html">About us</a>
+                            <a href="">About us</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="blog-page.html">services</a>
+                            <a href="">services</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="blog-page.html">testimonial</a>
+                            <a href="">testimonial</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="blog-post-page.html">blog</a>
+                            <a href="blog-page.html">blog</a>
                         </li>
                         <li class="footer-nav-item">
                             <a href="contact-us-page.html">Contact Us</a>
@@ -320,11 +320,13 @@
                 </div>
                 <div class="col-lg-5 offset-lg-1 quick-contact">
                     <h6 class="heading text-white text-uppercase line-h-medium">Quick contact us</h6>
-                    <form role="form" class="form">
-                        <input class=" name-email  bg-transp form-border" type="text"  name="follow-up[name]" placeholder="Name *"
-                        ><input class=" name-email  bg-transp form-border" type="email" name="follow-up[email]" placeholder="Email *"
-                        ><textarea class="comment  bg-transp form-border resize-none" name="follow-up[comment]" cols="50" rows="5" placeholder="Comment *"></textarea>
-                        <button class="submit-button call-to-action btn hover-transition bg-transp" type="submit" name="follow-up[submit]">Submit Now
+                    <form role="form" class="footer-form">
+                        <div class="media">
+                            <input class="form-name form-item form-control bg-transp form-border" type="text" id="contact-form-name" name="follow-up[name]" placeholder="Name *">
+                            <input class="form-email form-item form-control bg-transp form-border" type="email" id="contact-form-email" name="follow-up[email]" placeholder="Email *">
+                        </div>
+                        <textarea class="form-comment form-item form-control bg-transp form-border resize-none" name="follow-up[comment]" id="contact-form-comment" cols="50" rows="5" placeholder="Comment *"></textarea>
+                        <button class="submit-button call-to-action btn hover-transition bg-transp text-uppercase" type="submit" name="follow-up[submit]">Submit Now
                         </button>
                     </form>
                 </div>

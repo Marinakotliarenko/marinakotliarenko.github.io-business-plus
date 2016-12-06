@@ -1,3 +1,4 @@
+@import "mixin";
 .site-header {
   z-index: 10;
   overflow: hidden;
@@ -14,13 +15,11 @@
   }
   .company-phone {
     margin-top: 2.3rem;
-    @include md {
-      .phone {
-        padding-left: 13%;
-        border-left: 1px solid rgba(221, 228, 234, 0.15);
-        .phone-img {
-          margin-right: 3px;
-        }
+    .phone {
+      padding-left: 13%;
+      border-left: 1px solid rgba(221, 228, 234, 0.15);
+      .phone-img {
+        margin-right: 3px;
       }
     }
   }
@@ -36,9 +35,13 @@
   background: #000;
   overflow: hidden;
   img{
+    position: relative;
     display: block;
+    top: 0;
+    left: 50%;
+    @include translate(-50%, 0);
     width: 100%;
-    height: auto;
+    min-height: 395px;
     opacity: 0.4;
   }
 }
