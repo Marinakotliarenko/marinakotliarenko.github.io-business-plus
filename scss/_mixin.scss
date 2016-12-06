@@ -55,3 +55,11 @@ $lg-width: 1200px;
     @content;
   }
 }
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}

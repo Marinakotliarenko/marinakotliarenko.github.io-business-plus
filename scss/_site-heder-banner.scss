@@ -7,24 +7,29 @@
   position: absolute;
   border-bottom:  1px solid rgba(221, 228, 234, 0.15);
   .site-logo {
-    margin-top: 0.5rem;
     .logo-img {
       width: 164px;
       height: 34px;
     }
   }
+  .container, .row {
+    height: 100%;
+  }
+  .navbar-divider {
+    height: 23px;
+    background-color: rgba(221, 228, 234, 0.15);
+    margin-right: 1.3rem;
+    margin-left: 1.3rem;
+  }
   .company-phone {
-    margin-top: 2.3rem;
     .phone {
-      padding-left: 13%;
-      border-left: 1px solid rgba(221, 228, 234, 0.15);
       .phone-img {
         margin-right: 3px;
       }
     }
   }
   .main-navigation {
-    margin-top: 2.3rem;
+    @include flex(0 0 66.666667%)
   }
   .margin-l-base {
     margin-left: 3em;
