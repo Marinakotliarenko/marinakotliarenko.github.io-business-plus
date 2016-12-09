@@ -63,3 +63,9 @@ $lg-width: 1200px;
   -ms-flex:  $values;
   flex:  $values;
 }
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  -moz-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
+}

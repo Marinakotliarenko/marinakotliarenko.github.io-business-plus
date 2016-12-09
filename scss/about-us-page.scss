@@ -1,0 +1,55 @@
+/*-------------------------------------IMPORTS---------------------------------------*/
+@import "application";
+@import "mixin";
+/*----------------------------------------------------------------------------------*/
+.about-us-story {
+  margin-bottom: 5rem;
+}
+.actions-section {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1140px;
+  height: 400px;
+  margin-bottom: 5rem;
+  background: #000;
+
+  .call-to-action {
+    z-index: 2;
+    margin: 0 1rem;
+  }
+  .actions-section-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+  }
+}
+.our-views {
+  .container {
+    //padding-bottom: 101px; - if last child isn't row-reverse
+    padding-bottom: 50px;
+  }
+  .pyramids {
+    &::before {
+      left: 0;
+    }
+    &::after{
+      left: 80px;
+    }
+  }
+  .concept:nth-child(2n) {
+  @include flex-flow (row-reverse)
+}
+  .concept-img {
+    width: 263px;
+    height: 176px;
+  }
+}
+.clients {
+  .container {
+    padding-bottom: 101px;
+  }
+}
+
