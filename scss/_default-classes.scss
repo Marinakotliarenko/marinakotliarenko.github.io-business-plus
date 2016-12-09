@@ -74,12 +74,14 @@ a:hover, a:active {
   width: 151px;
   height: 51px;
   border: 2px solid #ffaf36;
-  margin-right: 15px;
+  margin-right: -15px;
   font: 700 13px 'Raleway', sans-serif;
   text-transform: uppercase;
   color: #ffaf36;
   text-align: center;
   padding: 1rem 1rem;
+}
+.hover-visibility {
   &:hover {
     opacity: 0.6;
   }
@@ -104,6 +106,12 @@ a:hover, a:active {
 .bg-light-blue {
   background-color: #eaeff3;
 }
+.bg-light-orange {
+  background-color: #ffaf36;
+}
+.bg-white {
+  background-color: white;
+}
 .page-content-header {
   width: 100%;
   margin-top:6.3rem;
@@ -114,6 +122,9 @@ a:hover, a:active {
 }
 .border-none {
   border: none;
+}
+.border-r-zero {
+  border-radius: 0;
 }
 .resize-none {
   resize: none;

@@ -48,3 +48,17 @@
     transform: rotate(50deg);
   }
 }
+.search {
+  margin: 0 auto;
+  .form-question {
+    width: 750px;
+    height: 47px;
+
+    border: 1px solid #e0e7ec;
+  }
+  .form-search {
+    width: 47px;
+    height: 47px;
+    padding: 0.5rem 0.5rem;
+  }
+}
