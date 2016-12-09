@@ -39,7 +39,7 @@
       left: 80px;
     }
   }
-  .concept:nth-child(2n) {
+  .concept-item:nth-child(2n) {
   @include flex-flow (row-reverse)
 }
   .concept-img {
@@ -47,9 +47,35 @@
     height: 176px;
   }
 }
-.clients {
+.clients-section {
   .container {
     padding-bottom: 101px;
+  }
+  .clients {
+    border: 1px solid #eaeff3;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 5rem;
+    .col-lg-2 {
+      padding: 0;
+    }
+    .client-item {
+      height: 190px;
+      //width: 100%;
+      border: 1px solid #eaeff3;
+    }
+  }
+  .carousel {
+    .carousel-item {
+      display: block;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: #36a8ff;
+    }
+    .carousel-active {
+      background-color: #ffaf36;
+    }
   }
 }
 
