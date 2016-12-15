@@ -1,0 +1,14 @@
+.company-phone {
+  .phone {
+    .phone-img {
+      margin-right: 3px;
+    }
+  }
+  .icon-call-out {
+    font-size: 20px;
+    font-family: 'simple-line-icons' !important;
+    &:before {
+      font-family: 'simple-line-icons' !important;
+    }
+  }
+}

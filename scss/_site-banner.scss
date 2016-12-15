@@ -1,0 +1,15 @@
+.site-banner{
+  height: 395px;
+  background: #000;
+  overflow: hidden;
+  img{
+    position: relative;
+    display: block;
+    top: 0;
+    left: 50%;
+    @include translate(-50%, 0);
+    width: 100%;
+    min-height: 395px;
+    opacity: 0.4;
+  }
+}

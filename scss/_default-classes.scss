@@ -7,47 +7,12 @@ body {
 }
 .heading {
   font: 700 18px 'Raleway', sans-serif;
-
 }
 .font-custom {
   font: italic 16px 'Lora', serif;
 }
 .text-proxima {
   font: 600 13px 'PNR', sans-serif;
-}
-.font-huge {
-  font-size: 30px;
-  font-weight: 800;
-}
-.font-bold {
-  font-weight: 700;
-}
-.font-large {
-  font-size: 16px;
-}
-.font-medium {
-  font-size: 15px;
-}
-.line-h-base {
-  line-height: 28px;
-}
-.line-h-big {
-  line-height: 30px;
-}
-.line-h-medium{
-  line-height: 24px;
-}
-.text-black {
-  color: #1c1c1c;
-}
-.text-pale-blue {
-  color: #dbefff;
-}
-.text-dark-gray{
-  color: #757575;
-}
-.text-light-orange {
-  color: #ffaf36;
 }
 a{
   @include open-sans($font-base);
@@ -81,21 +46,61 @@ a:hover, a:active {
   text-align: center;
   padding: 1rem 1rem;
 }
-.hover-visibility {
-  &:hover {
-    opacity: 0.6;
-  }
-}
 .submit-button{
   display: block;
   margin-top: 0.5rem;
   border-radius: 0;
+}
+.hover-visibility {
+  &:hover {
+    opacity: 0.6;
+  }
 }
 .hover-transition {
   transition: all 0.3s ease-out;
   -webkit-transition:  all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
+}
+.font-huge {
+  font-size: 30px;
+  font-weight: 800;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-large {
+  font-size: 16px;
+}
+.font-small {
+  font-size: 12px;
+}
+.font-medium {
+  font-size: 15px;
+}
+.line-h-base {
+  line-height: 28px;
+}
+.line-h-big {
+  line-height: 30px;
+}
+.line-h-medium{
+  line-height: 24px;
+}
+.text-black {
+  color: #1c1c1c;
+}
+.text-pale-blue {
+  color: #dbefff;
+}
+.text-dark-gray{
+  color: #757575;
+}
+.text-light-orange {
+  color: #ffaf36;
 }
 .bg-transp {
   background-color: transparent;
@@ -129,6 +134,9 @@ a:hover, a:active {
 .resize-none {
   resize: none;
 }
+.pb-pyramids {
+  padding-bottom: 101px;
+}
 .pagination-item {
   display: block;
   width: 51px;
@@ -153,4 +161,11 @@ a:hover, a:active {
 }
 .flex-column {
   flex-direction: column;
+}
+.icon-call-out {
+  font-size: 20px;
+  font-family: 'simple-line-icons' !important;
+  &:before {
+    font-family: 'simple-line-icons' !important;
+  }
 }

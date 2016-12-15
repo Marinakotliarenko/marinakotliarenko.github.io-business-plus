@@ -1,16 +1,18 @@
 @import "reset";
-//@import "../js-libraries/bootstrap-4.0.0-alpha.5/scss/bootstrap-flex";
+//@import "../bootstrap-4.0.0-alpha.5/scss/bootstrap-flex";
 @import "fonts";
 @import "variables";
 @import "mixin";
 
 
 @import "default-classes";
-@import "site-heder-banner";
+@import "site-heder";
+@import "site-banner";
 @import "site-footer";
 
 @import "icons";
 @import "pyramids";
+@import "company-phone";
 
 
 

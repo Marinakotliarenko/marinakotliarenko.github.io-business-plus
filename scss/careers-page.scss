@@ -2,6 +2,70 @@
 @import "application";
 @import "mixin";
 /*----------------------------------------------------------------------------------*/
-.icon-down {
-  color: black;
+.careers {
+  .careers-img {
+    position: relative;
+    height: 210px;
+    margin-top: 6.3rem;
+    img:first-child {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    img:last-child {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+    }
+  }
 }
+.our-offers-section {
+  padding-bottom: 5rem;
+  .offer-item:nth-child(n){
+    padding-left: 0;
+  }
+  .offer-item:nth-child(2n){
+    padding-left: 2rem;
+  }
+  .icon {
+    margin: 0;
+    font-size: 42px;
+  }
+}
+
+.open-positions-section {
+  .vacancy-item {
+    border-bottom: 1px solid #e5eaee;
+    &:last-child {
+      border: none;
+    }
+    a {
+      span {
+        color: #36a8ff;
+      }
+    }
+    a.collapsed {
+      -ms-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      span {
+        color: #1c1c1c;
+      }
+    }
+  }
+  .icon-arrow-down-circle {
+    font-size: 40px;
+    &:before {
+      font-family: 'simple-line-icons' !important;
+    }
+  }
+  dd {
+    vertical-align: top;
+  }
+  .call-to-action:hover {
+    color: #1c1c1c;
+  }
+
+}
+

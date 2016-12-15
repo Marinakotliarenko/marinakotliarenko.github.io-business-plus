@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="js-libraries/bootstrap-4.0.0-alpha.5/dist/css/bootstrap-flex.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-flex.min.css">
     <link rel="stylesheet" type="text/css" href="css/careers-page.css" >
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800|Raleway:400,700,800" rel="stylesheet">
+    <link href="bower_components/google-font-lora/lora.css" rel="stylesheet">
+    <link href="bower_components/google-font-open-sans/openSans.css" rel="stylesheet">
+    <link href="bower_components/google-font-raleway/raleway.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fontello-929d8335/css/fontello.css">
+    <link rel="stylesheet" href="bower_components/simple-line-icons/css/simple-line-icons.css">
     <title>B PLUS/carers</title>
 </head>
 <body>
@@ -23,7 +26,7 @@
                 <span class="navbar-divider hidden-md-down"></span>
                 <div class="company-phone">
                     <a href="tel:+9978 8856 999" class="phone">
-                        <img class="phone-img" src="images/phone-icon.png" alt="Phone number:">
+                        <span class="icon-call-out text-light-orange" aria-hidden="true"></span>
                         +1 212-532-1256
                     </a>
                 </div>
@@ -55,29 +58,26 @@
             </div>
         </div>
     </header>
-    <section class="banner">
+    <section class="site-banner">
         <img src="images/banner-careers.jpg" alt="Banner image">
     </section>
-    <section id="careers" class="page-content">
-        <div class="container pyramids">
+    <section class="careers page-content">
+        <div class="container pyramids pb-pyramids">
             <div class="row">
-                <div class="col-lg">
-                    <img src="images/careers-img.jpg" alt="Image">
-                    <img src="images/careers-img-2.jpg" alt="Image">
-                </div>
-                <div class="col-lg">
+                <aside class="careers-img col-lg-3">
+                    <img  width="165" height="157" src="images/careers-img.jpg" alt="Image">
+                    <img  width="165" height="157" src="images/careers-img-2.png" alt="Image">
+                </aside>
+                <div class="col-lg-8 ml-2">
                     <header class="page-content-header">
-                        <h1 class="heading font-huge text-black text-uppercase line-h-medium">Careers</h1>
+                        <h1 class="heading mt-2 font-huge text-black text-uppercase line-h-medium">Careers</h1>
                         <h2 class="font-custom line-h-big text-black">Our Opaning positions</h2>
                     </header>
                     <p class="line-h-base">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         has been the industry's standard dummy text ever since the 1500s, when an unknown printer
                         took a galley of type and scrambled it to make a type specimen book. It has survived not only
-                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including
-                        versions of Lorem Ipsum.
+                        five centuries.
                     </p>
                 </div>
             </div>
@@ -90,53 +90,61 @@
                     <h1 class="heading font-huge text-black text-uppercase line-h-medium">Our offers</h1>
                     <h2 class="font-custom line-h-big text-black">We offering awesome facts</h2>
                 </header>
-                <ul class="offers">
-                    <li class="offer-item col-lg-5">
-                        <span class="icon icon-smile" aria-hidden="true"></span>
-                        <div class="col-lg">
-                            <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
-                                Fun environment
-                            </h3>
-                            <p class="line-h-base">
-                                Lorem Ipsum is simply dummy text of the printing and type
-                                setting industry. Lorem Ipsum has been the industry'
-                            </p>
+                <ul class="offers row">
+                    <li class="offer-item col-lg-6">
+                        <div class="row">
+                            <span class="col-lg-2 icon icon-smile" aria-hidden="true"></span>
+                            <div class="col-lg">
+                                <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                    Fun environment
+                                </h3>
+                                <p class="line-h-base">
+                                    Lorem Ipsum is simply dummy text of the printing and type
+                                    setting industry. Lorem Ipsum has been the industry'
+                                </p>
+                            </div>
                         </div>
                     </li>
-                    <li class="offer-item col-lg-5">
-                        <span class="icon icon-gift" aria-hidden="true"></span>
-                        <div class="col-lg">
-                            <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
-                                compensation
-                            </h3>
-                            <p class="line-h-base">
-                                Lorem Ipsum is simply dummy text of the printing and type
-                                setting industry. Lorem Ipsum has been the industry'
-                            </p>
+                    <li class="offer-item col-lg-6">
+                        <div class="row">
+                            <span class="col-lg-2 icon icon-gift" aria-hidden="true"></span>
+                            <div class="col-lg">
+                                <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                    compensation
+                                </h3>
+                                <p class="line-h-base">
+                                    Lorem Ipsum is simply dummy text of the printing and type
+                                    setting industry. Lorem Ipsum has been the industry'
+                                </p>
+                            </div>
                         </div>
                     </li>
-                    <li class="offer-item col-lg-5">
-                        <span class="icon icon-coffee" aria-hidden="true"></span>
-                        <div class="col-lg">
-                            <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
-                                all you need
-                            </h3>
-                            <p class="line-h-base">
-                                Lorem Ipsum is simply dummy text of the printing and type
-                                setting industry. Lorem Ipsum has been the industry'
-                            </p>
+                    <li class="offer-item col-lg-6">
+                        <div class="row">
+                            <span class="col-lg-2 icon icon-coffee" aria-hidden="true"></span>
+                            <div class="col-lg">
+                                <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                    all you need
+                                </h3>
+                                <p class="line-h-base">
+                                    Lorem Ipsum is simply dummy text of the printing and type
+                                    setting industry. Lorem Ipsum has been the industry'
+                                </p>
+                            </div>
                         </div>
                     </li>
-                    <li class="offer-item col-lg-5">
-                        <span class="icon icon-plane-outline" aria-hidden="true"></span>
-                        <div class="col-lg">
-                            <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
-                                pleasure trips
-                            </h3>
-                            <p class="line-h-base">
-                                Lorem Ipsum is simply dummy text of the printing and type
-                                setting industry. Lorem Ipsum has been the industry'
-                            </p>
+                    <li class="offer-item col-lg-6">
+                        <div class="row">
+                            <span class="col-lg-2 icon icon-plane-outline" aria-hidden="true"></span>
+                            <div class="col-lg">
+                                <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                    pleasure trips
+                                </h3>
+                                <p class="line-h-base">
+                                    Lorem Ipsum is simply dummy text of the printing and type
+                                    setting industry. Lorem Ipsum has been the industry'
+                                </p>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -144,86 +152,136 @@
         </div>
     </section>
     <section  class="open-positions-section">
-        <div class="container pyramids">
+        <div class="container pyramids pb-pyramids">
             <div class="row d-block">
-                <header class="page-content-header">
+                <header class="page-content-header mb-2">
                     <h1 class="heading font-huge text-black text-uppercase line-h-medium">Open positions</h1>
                     <h2 class="font-custom line-h-big text-black">Some of our featured vacancy</h2>
                 </header>
-                <div class="row">
-                    <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
-                        customer relationship manager
-                    </h3>
-                    <span class="icon icon-right" aria-hidden="true"></span>
-                </div>
-
-
-                <div class="row" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="card w-100">
-                        <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
-                            HR manager
-                        </h3>
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            <span class="icon icon-down" aria-hidden="true"></span>
-                        </a>
-                    </div>
-                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="card-block">
-                            <dl>
-                                <dt>Mission</dt>
-                                <dd>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</dd>
-                            </dl>
-                            <dl>
-                                <dt>Require</dt>
-                                <dd>
-                                    <ul>
-                                        <li>
-                                            <span class="icon icon-ok" aria-hidden="true"></span>
-                                            Lorem ipsum dolor sit amet, consectetur.
-                                        </li>
-                                        <li>
-                                            <span class="icon icon-ok" aria-hidden="true"></span>
-                                            Praesent in urna at neque varius.
-                                        </li>
-                                        <li>
-                                            <span class="icon icon-ok" aria-hidden="true"></span>
-                                            Mauris lobortis orci non viverra semper.
-                                        </li>
-                                        <li>
-                                            <span class="icon icon-ok" aria-hidden="true"></span>
-                                            Phasellus tristique sem vitae lorem.
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>Location</dt>
-                                <dd>Washington DC</dd>
-                            </dl>
-                            <dl>
-                                <dt>Type</dt>
-                                <dd>Full-Time Position</dd>
-                            </dl>
-                            <dl>
-                                <dt>Other</dt>
-                                <dd>Lorem Ipsum is simply dummy text of the printing and type setting industry.
-                                    Lorem Ipsum has been
-                                    the industry.</dd>
-                            </dl>
+                <div id="accordion" role="tablist" aria-multiselectable="true" class="mb-2">
+                    <div class="vacancy-item pb-1 pt-1">
+                        <div role="tab" id="headingOne" class="media flex-items-xl-between">
+                            <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                customer relationship manager
+                            </h3>
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <span class="icon-arrow-down-circle hover-visibility hover-transition" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="card-block">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
-                        Customer Success Manager
-                    </h3>
-                    <span class="icon icon-right" aria-hidden="true"></span>
-                </div>
-                <div class="row">
-                    <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
-                        Infrastructure Developer
-                    </h3>
-                    <span class="icon icon-right" aria-hidden="true"></span>
+                    <div class="vacancy-item pb-1 pt-1">
+                        <div role="tab" id="headingTwo" class="media flex-items-xl-between">
+                            <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                HR manager
+                            </h3>
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="icon-arrow-down-circle text-black hover-visibility hover-transition" aria-hidden="true"></span>
+                            </a>
+                         </div>
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <dl class="row">
+                                        <dt class="col-lg-4 heading font-medium font-medium text-uppercase text-black">Mission</dt>
+                                        <dd class="col-lg-7 line-h-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-lg-6">
+                                    <dl class="row">
+                                        <dt class="col-lg-4 heading font-medium font-medium text-uppercase text-black">Location</dt>
+                                        <dd class="col-lg-7 line-h-base">Washington DC</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-lg-6">
+                                    <dl class="row">
+                                        <dt class="col-lg-4 heading font-medium font-medium text-uppercase text-black">Require</dt>
+                                        <dd class="col-lg-7 line-h-base">
+                                            <ul>
+                                                <li>
+                                                    <span class="icon icon-ok font-small" aria-hidden="true"></span>
+                                                    Lorem ipsum dolor sit amet, consectetur.
+                                                </li>
+                                                <li>
+                                                    <span class="icon icon-ok font-small " aria-hidden="true"></span>
+                                                    Praesent in urna at neque varius.
+                                                </li>
+                                                <li>
+                                                    <span class="icon icon-ok font-small " aria-hidden="true"></span>
+                                                    Mauris lobortis orci non viverra semper.
+                                                </li>
+                                                <li>
+                                                    <span class="icon icon-ok font-small " aria-hidden="true"></span>
+                                                    Phasellus tristique sem vitae lorem.
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-lg-6">
+                                    <dl class="row">
+                                        <dt class="col-lg-4 heading font-medium font-medium text-uppercase text-black">Type</dt>
+                                        <dd class="col-lg-7 line-h-base">Full-Time Position</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-lg-6">
+                                    <dl class="row">
+                                        <dt class="col-lg-4 heading font-medium font-medium text-uppercase text-black">Other</dt>
+                                        <dd class="col-lg-7 line-h-base">Lorem Ipsum is simply dummy text of the printing and
+                                            type setting industry. Lorem Ipsum has been the industry.
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-lg-6">
+                                    <dl class="row">
+                                        <dt class="col-lg-4 heading font-medium font-medium text-uppercase text-black">Other</dt>
+                                        <dd class="col-lg-7 line-h-base">Lorem Ipsum is simply dummy text of the printing and
+                                            type setting industry. Lorem Ipsum has been the industry.
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="media flex-items-lg-right mb-2">
+                                <a class="call-to-action col-lg-2 hover-transition hover-visibility mr-0 text-black bg-light-orange" href="">
+                                    apply now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacancy-item pb-1 pt-1">
+                        <div role="tab" id="headingThree" class="media flex-items-xl-between">
+                            <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                    Customer Success Manager
+                            </h3>
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="icon-arrow-down-circle text-black hover-visibility hover-transition" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="card-block">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacancy-item pb-1 pt-1">
+                        <div role="tab" id="headingFour" class="media flex-items-xl-between">
+                            <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                Infrastructure Developer
+                            </h3>
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="icon-arrow-down-circle text-black hover-visibility hover-transition" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="card-block">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -307,11 +365,13 @@
         </div>
     </footer>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
--->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="js-libraries/bootstrap-4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>bower
+-->
 
 </body>
 </html>

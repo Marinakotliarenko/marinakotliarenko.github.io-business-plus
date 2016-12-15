@@ -1,0 +1,10 @@
+{
+  "name": "business-plus",
+  "dependencies": {
+    "simple-line-icons": "2.4.1",
+    "bootstrap": "v4.0.0-alpha.5",
+    "google-font-lora": "https://google-fonts.azurewebsites.net/googleFonts/lora?family=Lora:400,400i",
+    "google-font-open-sans": "https://google-fonts.azurewebsites.net/googleFonts/openSans?family=Open+Sans:300,400,600,700,800",
+    "google-font-raleway": "https://google-fonts.azurewebsites.net/googleFonts/raleway?family=Raleway:400,500,700,800"
+  }
+}

@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="js-libraries/bootstrap-4.0.0-alpha.5/dist/css/bootstrap-flex.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-flex.min.css">
     <link rel="stylesheet" type="text/css" href="css/contact-us-page.css" >
-    <script type="text/javascript" src="js-libraries/bootstrap-4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800|Raleway:400,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/fontello-ea4a6f4c/css/fontello.css">
+    <link href="bower_components/google-font-lora/lora.css" rel="stylesheet">
+    <link href="bower_components/google-font-open-sans/openSans.css" rel="stylesheet">
+    <link href="bower_components/google-font-raleway/raleway.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fontello-929d8335/css/fontello.css">
+    <link rel="stylesheet" href="bower_components/simple-line-icons/css/simple-line-icons.css">
     <title>B PLUS/contact-us</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
                 <span class="navbar-divider hidden-md-down"></span>
                 <div class="company-phone">
                     <a href="tel:+9978 8856 999" class="phone">
-                        <img class="phone-img" src="images/phone-icon.png" alt="Phone number:">
+                        <span class="icon-call-out text-light-orange" aria-hidden="true"></span>
                         +1 212-532-1256
                     </a>
                 </div>
@@ -56,7 +58,7 @@
             </div>
         </div>
     </header>
-    <section class="banner">
+    <section class="site-banner">
         <img src="images/layer-20.jpg" alt="Banner image">
     </section>
     <section id="contact-us" class="page-content">
@@ -69,7 +71,7 @@
                 <div class="row flex-items-lg-between w-100 flex-items-lg-middle mb-2">
                     <div class="company-phone col-lg-2">
                         <a class="phone text-black font-bold font-large" href="tel:+9978 8856 999">
-                            <img class="phone-img" src="images/phone-icon.png" alt="Phone number:">
+                            <span class="icon-call-out text-light-orange" aria-hidden="true"></span>
                             +1 212-532-1256
                         </a>
                     </div>
@@ -92,7 +94,7 @@
         </div>
     </section>
     <section class="submit-comment bg-light-blue">
-        <div class="container pyramids">
+        <div class="container pyramids pb-pyramids">
             <div class="row d-block">
                 <header class="page-content-header">
                     <h1 class="heading font-huge text-black text-uppercase line-h-medium">Leave your comment</h1>
