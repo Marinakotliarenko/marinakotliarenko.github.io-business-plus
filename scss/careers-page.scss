@@ -21,7 +21,6 @@
   }
 }
 .our-offers-section {
-  padding-bottom: 5rem;
   .offer-item:nth-child(n){
     padding-left: 0;
   }
@@ -52,12 +51,6 @@
       span {
         color: #1c1c1c;
       }
-    }
-  }
-  .icon-arrow-down-circle {
-    font-size: 40px;
-    &:before {
-      font-family: 'simple-line-icons' !important;
     }
   }
   dd {

@@ -1,0 +1,49 @@
+/*-------------------------------------IMPORTS---------------------------------------*/
+@import "application";
+
+/*----------------------------------------------------------------------------------*/
+.home-banner{
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+  img{
+    position: relative;
+    display: block;
+    top: 0;
+    left: 50%;
+    @include translate(-50%, 0);
+    width: 100%;
+    opacity: 0.4;
+  }
+}
+.about-us-content {
+  margin-top: 5.5rem;
+}
+.service-icon{
+  
+}
+.home-clients-section {
+  .testimonials {
+    margin-bottom: 4rem;
+  }
+}
+.home-partners-section {
+  .partners {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 5rem;
+    .col-lg-2 {
+      padding: 0;
+      border-right: 1px solid #eaeff3;
+      border-top: 1px solid #eaeff3;
+      border-bottom: 1px solid #eaeff3;
+      &:first-child {
+        border-left: 1px solid #eaeff3;
+      }
+    }
+    .client-item {
+      height: 190px;
+      //width: 100%;
+    }
+  }
+}

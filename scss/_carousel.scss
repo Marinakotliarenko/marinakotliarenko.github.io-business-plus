@@ -1,0 +1,12 @@
+.carousel {
+  .carousel-item {
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #36a8ff;
+  }
+  .carousel-active {
+    background-color: #ffaf36;
+  }
+}
