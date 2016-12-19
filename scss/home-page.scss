@@ -1,12 +1,20 @@
 /*-------------------------------------IMPORTS---------------------------------------*/
 @import "application";
-
+@import "sprite-home-services";
 /*----------------------------------------------------------------------------------*/
 .home-banner{
-  height: 100vh;
+  height: 500px;
   background: #000;
   overflow: hidden;
-  img{
+  .carousel-item {
+    height: 500px;
+  }
+  .carousel-caption {
+    left: 10%;
+    top: 30%;
+    width: 40%;
+  }
+  img {
     position: relative;
     display: block;
     top: 0;
@@ -19,12 +27,38 @@
 .about-us-content {
   margin-top: 5.5rem;
 }
-.service-icon{
-  
+.line {
+  display: block;
+  width: 14px;
+  height: 4px;
+  margin-bottom: 5px;
+  .service-item:hover & {
+    border-top: 2px solid  #36a8ff;
+  }
 }
-.home-clients-section {
-  .testimonials {
-    margin-bottom: 4rem;
+
+
+
+.comma{
+  position: relative;
+  &::before {
+    content: "\275D";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    font-size: 200px;
+    opacity: 0.1;
+    .testimonial-item:first-child & {
+      color: #1c1c1c;
+    }
+    .testimonial-item:nth-child(2) & {
+      color: #36a8ff;
+      opacity: 0.15;
+    }
+    .testimonial-item:last-child & {
+      color: #ffaf36;
+      opacity: 0.3;
+    }
   }
 }
 .home-partners-section {
@@ -45,5 +79,14 @@
       height: 190px;
       //width: 100%;
     }
+  }
+}
+.home-clients-section {
+  .carousel-item {
+    height: 330px;
+  }
+  .testimonials {
+    margin-bottom: 4rem;
+    height: 200px;
   }
 }

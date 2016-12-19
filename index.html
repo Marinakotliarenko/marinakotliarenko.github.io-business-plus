@@ -59,7 +59,63 @@
         </div>
     </header>
     <section class="home-banner">
-        <img   src="images/banner-7.jpg" alt="Banner image">
+        <div id="carousel-banner" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-banner" data-slide-to="1"></li>
+                <li data-target="#carousel-banner" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img   src="images/banner-1.jpg" alt="Banner image">
+                    <div class="carousel-caption ">
+                        <h1>Welcome to
+                        <strong>
+                            Business plus
+                        </strong>
+                        </h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            Lorem Ipsum has been the industry's standard dummy text ever.
+                        </p>
+                        <a class="call-to-action d-block hover-transition hover-visibility bg-light-orange text-black" href="">
+                            read more
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img   src="images/banner-2.jpg" alt="Banner image">
+                    <div class="carousel-caption ">
+                        <h1>Welcome to
+                            <strong>
+                                Business plus
+                            </strong>
+                        </h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            Lorem Ipsum has been the industry's standard dummy text ever
+                            Lorem Ipsum has been the industry's standard dummy text ever.
+                        </p>
+                        <a class="call-to-action d-block hover-transition hover-visibility bg-light-orange text-black" href="">
+                            read more
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img   src="images/banner-3.jpg" alt="Banner image">
+                    <div class="carousel-caption ">
+                        <h1>Welcome to
+                            <strong>
+                                Business plus
+                            </strong>
+                        </h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry/.
+                        </p>
+                        <a class="call-to-action d-block hover-transition hover-visibility bg-light-orange text-black" href="">
+                            read more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="page-content home-about us pb-base" id="about-us-section">
         <div class="container">
@@ -74,7 +130,7 @@
                         has been the industry's standard dummy text ever since the 1500s, when an unknown printer
                         took a galley of type and scrambled it to make a type specimen book.
                     </p>
-                    <a class="call-to-action col-lg-2 d-block hover-transition hover-visibility" href="about-us-page.html">
+                    <a class="call-to-action d-block hover-transition hover-visibility" href="about-us-page.html">
                         read more
                     </a>
                 </div>
@@ -89,10 +145,11 @@
                     <h2 class="font-custom line-h-big text-black">What we are doing</h2>
                 </header>
                 <ul class="services row">
-                    <li class="service-item col-lg-6">
+                    <li class="service-item col-lg-6 hover-transition">
                         <div class="row">
-                            <img class="service-icon" src="images/home-services-img.png" alt="Service icon">
+                            <span class="boosting d-block m-rl-base"></span>
                             <div class="col-lg">
+                                <span class="line"></span>
                                 <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
                                     Boosting your business
                                 </h3>
@@ -103,10 +160,11 @@
                             </div>
                         </div>
                     </li>
-                    <li class="service-item col-lg-6">
+                    <li class="service-item col-lg-6 hover-transition">
                         <div class="row">
-                            <img class="service-icon" src="images/home-services-img.png" alt="Service icon">
+                            <span class="support d-block m-rl-base"></span>
                             <div class="col-lg">
+                                <span class="line"></span>
                                 <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
                                     Online support
                                 </h3>
@@ -117,10 +175,11 @@
                             </div>
                         </div>
                     </li>
-                    <li class="service-item col-lg-6">
+                    <li class="service-item col-lg-6 hover-transition">
                         <div class="row">
-                            <span class="col-lg-2 icon icon-coffee" aria-hidden="true"></span>
+                            <span class="analyzing d-block m-rl-base"></span>
                             <div class="col-lg">
+                                <span class="line"></span>
                                 <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
                                     analyzing business strategy
                                 </h3>
@@ -131,12 +190,13 @@
                             </div>
                         </div>
                     </li>
-                    <li class="service-item col-lg-6">
+                    <li class="service-item col-lg-6 hover-transition">
                         <div class="row">
-                            <span class="col-lg-2 icon icon-plane-outline" aria-hidden="true"></span>
+                            <span class="time d-block m-rl-base"></span>
                             <div class="col-lg">
+                                <span class="line"></span>
                                 <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
-                                    Time managment
+                                    Time management
                                 </h3>
                                 <p class="line-h-base">
                                     Lorem Ipsum is simply dummy text of the printing and industry
@@ -159,9 +219,92 @@
                     <h1 class="heading font-huge text-black text-uppercase line-h-medium">Clients</h1>
                     <h2 class="font-custom line-h-big text-black">Whats our client says</h2>
                 </header>
-                <ul class="testimonials row">
+                <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+                        <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="carousel-caption">
+                                <ul class="testimonials row">
+                                    <li class="testimonial-item col-lg-4">
+                                        <p class="line-h-base comma">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown.
+                                        </p>
+                                        <div class="row">
+                                            <img class="rounded-circle col-lg flex-grow-zero" width="68" height="68" src="images/home-clients-1.jpg" alt="Client image">
+                                            <div class="col-lg">
+                                                <p class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                                    Krishnan Unni
+                                                </p>
+                                                <span class="line-h-base">
+                                                Designation
+                                                </span>
+                                        </div>
+                                        </div>
+                                    </li>
+                                    <li class="testimonial-item col-lg-4">
+                                        <p class="line-h-base comma">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown.
+                                        </p>
+                                        <div class="row">
+                                            <img class="col-lg rounded-circle flex-grow-zero" width="68" height="68" src="images/home-clients-2.jpg" alt="Client image">
+                                            <div class="col-lg">
+                                                <p class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                                    Mariya Jeorge
+                                                </p>
+                                                <span class="line-h-base">
+                                                Designation
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="testimonial-item col-lg-4">
+                                        <p class="line-h-base comma">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown.
+                                        </p>
+                                        <div class="row">
+                                            <img class="col-lg rounded-circle flex-grow-zero" width="68" height="68" src="images/home-clients-3.jpg" alt="Client image">
+                                            <div class="col-lg">
+                                                <p class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                                    Akhil Designer
+                                                </p>
+                                                <span class="line-h-base">
+                                                Designation
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                            <div class="carousel-caption">
+                                <h3>bgbfgdndfg</h3>
+                                <p>...</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                            <div class="carousel-caption">
+                                <h3>bgfbdfnh</h3>
+                                <p>...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<ul class="testimonials row">
                     <li class="testimonial-item col-lg-4">
-                        <p class="line-h-base">
+                        <p class="line-h-base comma">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the
                             1500s, when an unknown.
@@ -179,7 +322,7 @@
                         </div>
                     </li>
                     <li class="testimonial-item col-lg-4">
-                        <p class="line-h-base">
+                        <p class="line-h-base comma">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the
                             1500s, when an unknown.
@@ -197,7 +340,7 @@
                         </div>
                     </li>
                     <li class="testimonial-item col-lg-4">
-                        <p class="line-h-base">
+                        <p class="line-h-base comma">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the
                             1500s, when an unknown.
@@ -214,8 +357,8 @@
                             </div>
                         </div>
                     </li>
-                </ul>
-                <ul class="carousel">
+                </ul>-->
+                <!--<ul class="carousel">
                     <li class="list-inline-item">
                         <a class="carousel-item carousel-active" href="#"></a>
                     </li>
@@ -225,7 +368,7 @@
                     <li class="list-inline-item">
                         <a class="carousel-item" href="#"></a>
                     </li>
-                </ul>
+                </ul>-->
             </div>
         </div>
     </section>
@@ -296,7 +439,7 @@
                                     when an unknown printer took a galley of type and scrambled...
                                 </p>
                             </li>
-                            <a class="call-to-action col-lg-2 d-block hover-transition hover-visibility" href="blog-page.html">
+                            <a class="call-to-action d-block hover-transition hover-visibility" href="blog-page.html">
                                 View more
                             </a>
                         </ul>
@@ -442,5 +585,13 @@
         </div>
     </footer>
 </div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/tether/dist/js/tether.min.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+   /* $('.carousel').carousel({
+        interval: false
+    })*/
+</script>
 </body>
 </html>
