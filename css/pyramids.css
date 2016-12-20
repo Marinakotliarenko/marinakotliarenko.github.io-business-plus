@@ -1,2 +1,0 @@
-.pyramids{position:relative}.pyramids::before{position:absolute;bottom:0;right:60px;content:"";width:0;height:0;border-left:80px solid transparent;border-right:80px solid transparent;border-bottom:101px solid #36a8ff}.pyramids::after{position:absolute;bottom:0;right:0;content:"";width:0;height:0;border-left:70px solid transparent;border-right:70px solid transparent;border-bottom:70px solid #ffaf36}
-/*# sourceMappingURL=pyramids.css.map */

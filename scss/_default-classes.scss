@@ -45,6 +45,9 @@ a:hover, a:active {
   color: #ffaf36;
   text-align: center;
   padding: 1rem 1rem;
+  &:hover {
+    color: black;
+  }
 }
 .submit-button{
   display: block;
@@ -64,6 +67,8 @@ a:hover, a:active {
 }
 .font-huge {
   font-size: 30px;
+}
+.font-extra-bold {
   font-weight: 800;
 }
 .font-bold {
@@ -71,6 +76,9 @@ a:hover, a:active {
 }
 .font-medium {
   font-weight: 500;
+}
+.font-regular {
+  font-weight: 400;
 }
 .font-large {
   font-size: 16px;
@@ -89,6 +97,9 @@ a:hover, a:active {
 }
 .line-h-medium{
   line-height: 24px;
+}
+.text-base {
+  color: #585858;
 }
 .text-black {
   color: #1c1c1c;
