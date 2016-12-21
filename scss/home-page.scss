@@ -3,24 +3,21 @@
 @import "sprite-home-services";
 /*----------------------------------------------------------------------------------*/
 .home-banner{
-  height: 500px;
+  height: 550px;
   background: #000;
   overflow: hidden;
   .carousel-item {
-    height: 500px;
+    height: 550px;
   }
   .carousel-caption {
-    left: 8%;
-    top: 40%;
+    left: 7.9%;
+    top: 35%;
     width: 40%;
   }
   .carousel-indicators {
     left: 50%;
     width: 60%;
     margin-left: -30%;
-   li {
-     border: 1px solid #fff;
-   }                              //to del
   }
   img {
     position: relative;
@@ -31,11 +28,14 @@
     width: 100%;
     opacity: 0.4;
   }
+  .font-gigantic {
+    margin-left: -2px;
+  }
 }
 .about-us-content {
   margin-top: 5.5rem;
 }
-.line {
+.services-hover-line {
   display: block;
   width: 14px;
   height: 4px;
@@ -56,13 +56,13 @@
     height: 200px;
   }
 }
-.comma{
+.clients-comma{
   position: relative;
   &::before {
     content: "\275D";
     position: absolute;
     top: 30px;
-    left: 0;
+    left: -15px;
     font-size: 200px;
     opacity: 0.1;
     .testimonial-item:first-child & {
@@ -75,6 +75,17 @@
     .testimonial-item:last-child & {
       color: #ffaf36;
       opacity: 0.3;
+    }
+  }
+}
+.home-news-section {
+  .news {
+    //max-height: 460px;
+    .news-item {
+      margin-bottom: 2rem;
+    }
+    .stats {
+      color: #565656;
     }
   }
 }

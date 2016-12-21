@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-flex.min.css">
-    <link rel="stylesheet" type="text/css" href="css/faq.css" >
+    <link rel="stylesheet" type="text/css" href="css/faq-page.css" >
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
     <link href="bower_components/google-font-lora/lora.css" rel="stylesheet">
     <link href="bower_components/google-font-open-sans/openSans.css" rel="stylesheet">
@@ -47,8 +47,15 @@
                         <li class="margin-l-base">
                             <a href="blog-page.html">blog</a>
                         </li>
-                        <li class="margin-l-base">
-                            <a class="active" href="faq.html">pages</a>
+                        <li class="margin-l-base dropdown">
+                            <a href="" class="dropdown-toggle active" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item text-white" href="faq-page.html">faq</a>
+                                <a class="dropdown-item text-white" href="careers-page.html">careers</a>
+                                <a class="dropdown-item text-white" href="#">Testimonial</a>
+                            </div>
                         </li>
                         <li class="margin-l-base">
                             <a href="contact-us-page.html">Contact Us</a>
@@ -287,5 +294,8 @@
         </div>
     </footer>
 </div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/tether/dist/js/tether.min.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

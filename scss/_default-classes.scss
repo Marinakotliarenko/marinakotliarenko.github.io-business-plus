@@ -22,6 +22,9 @@ a{
   -webkit-transition:  all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
+  &:focus {
+    color: white;
+  }
 }
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
@@ -65,23 +68,20 @@ a:hover, a:active {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
 }
-.font-huge {
-  font-size: 30px;
-}
-.font-extra-bold {
-  font-weight: 800;
-}
-.font-bold {
-  font-weight: 700;
+.font-regular {
+  font-weight: 400;
 }
 .font-medium {
   font-weight: 500;
 }
-.font-regular {
-  font-weight: 400;
+.font-semi-bold {
+  font-weight: 600;
 }
-.font-large {
-  font-size: 16px;
+.font-bold {
+  font-weight: 700;
+}
+.font-extra-bold {
+  font-weight: 800;
 }
 .font-small {
   font-size: 12px;
@@ -89,14 +89,26 @@ a:hover, a:active {
 .font-medium {
   font-size: 15px;
 }
+.font-large {
+  font-size: 16px;
+}
+.font-huge {
+  font-size: 30px;
+}
+.font-gigantic {
+  font-size: 60px;
+}
 .line-h-base {
   line-height: 28px;
 }
-.line-h-big {
-  line-height: 30px;
+.line-h-small {
+  line-height: 18px;
 }
 .line-h-medium{
   line-height: 24px;
+}
+.line-h-big {
+  line-height: 30px;
 }
 .text-base {
   color: #585858;
@@ -132,6 +144,12 @@ a:hover, a:active {
   width: 100%;
   padding-top: 6.3rem;
   margin-bottom: 1.5rem;
+}
+.border-b-grey {
+  border-bottom: 1px solid #d8dcdf;
+}
+.border-b-l-orange {
+  border-bottom: 1px solid #ffaf36;
 }
 .form-border-b {
   border-bottom: 1px solid #dce3e8;
