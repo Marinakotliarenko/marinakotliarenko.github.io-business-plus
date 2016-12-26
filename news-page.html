@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-flex.min.css">
-    <link rel="stylesheet" type="text/css" href="css/contact-us-page.css" >
+    <link rel="stylesheet" type="text/css" href="css/news-page.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
     <link href="bower_components/google-font-lora/lora.css" rel="stylesheet">
     <link href="bower_components/google-font-open-sans/openSans.css" rel="stylesheet">
     <link href="bower_components/google-font-raleway/raleway.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fontello-929d8335/css/fontello.css">
     <link rel="stylesheet" href="bower_components/simple-line-icons/css/simple-line-icons.css">
-    <title>B PLUS/contact-us</title>
+    <title>BUSINESS PLUS</title>
 </head>
 <body>
 <div class="wrapper">
@@ -42,7 +42,7 @@
                             <a href="services-page.html">services</a>
                         </li>
                         <li class="margin-l-base">
-                            <a href="news-page.html">news</a>
+                            <a class="active" href="news-page.html">news</a>
                         </li>
                         <li class="margin-l-base">
                             <a href="blog-page.html">blog</a>
@@ -58,7 +58,7 @@
                             </div>
                         </li>
                         <li class="margin-l-base">
-                            <a class="active" href="contact-us-page.html">Contact Us</a>
+                            <a href="contact-us-page.html">Contact Us</a>
                         </li>
                     </ul>
                 </nav>
@@ -66,70 +66,112 @@
         </div>
     </header>
     <section class="site-banner">
-        <img src="images/layer-20.jpg" alt="Banner image">
+        <img src="images/banner-news.jpg" alt="Banner image">
     </section>
-    <section id="contact-us" class="page-content pb-base">
+    <section class="testimonials-section page-content">
         <div class="container">
             <div class="row">
                 <header class="page-content-header">
-                    <h1 class="heading font-huge font-extra-bold text-black text-uppercase line-h-medium">Get in touch</h1>
-                    <h2 class="font-custom line-h-big text-black">Feel free to contact us</h2>
+                    <h1 class="heading font-huge font-extra-bold text-black text-uppercase line-h-medium">
+                        Testimonials
+                    </h1>
+                    <h2 class="font-custom line-h-big text-black">Our Happy Clients</h2>
                 </header>
-                <div class="row flex-items-lg-between w-100 flex-items-lg-middle mb-2">
-                    <div class="company-phone col-lg-2">
-                        <a class="phone text-black font-bold font-large" href="tel:+9978 8856 999">
-                            <span class="icon-call-out text-light-orange" aria-hidden="true"></span>
-                            +1 212-532-1256
-                        </a>
-                    </div>
-                    <a class="call-to-action col-lg-3 hover-transition hover-visibility" href="">
-                        info@businessplus.com
-                    </a>
-                </div>
-                <section class="address-section col-lg-12">
-                    <img class=" address-pic" width="1140" height="345" src="images/layer-119.jpg" alt="Address-picture">
-                    <address class="address heading text-uppercase">
-                        <span class="country-name font-huge font-extra-bold text-light-orange line-h-medium">Canada</span>
-                         <p class="text-white  font-large line-h-medium">
-                            <span class="street-address">100 Mission St,</span>
-                             <span class="extended-address">Canada street, Second flor</span>
-                            <span class="postal-code"> 8878</span>
-                         </p>
-                    </address>
-                </section>
+                <span class="fa fa-quote-left comma" aria-hidden="true"></span>
             </div>
         </div>
+        <ul class="testimonials w-100">
+            <li class="testimonial-item">
+                <div class="container pyramids">
+                    <div class="row flex-items-lg-middle pb-base">
+                        <img width="458" height="353" src="images/testimonial-1.jpg" alt="Client photo">
+                        <div class="testimonial-quotation bg-white">
+                            <blockquote class="line-h-base">
+                                <span class="fa fa-quote-left text-black" aria-hidden="true">
+                                </span>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                                a galley of type and scrambled it to make a type.
+                                <span class="fa fa-quote-left bottom text-black" aria-hidden="true">
+                                </span>
+                            </blockquote>
+                            <p class="heading text-uppercase font-small-lg font-bold text-black line-h-medium">
+                                NAme Here
+                            </p>
+                            <span class="line-h-base text-orange text-base">
+                                Designation
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="testimonial-item">
+                <div class="container">
+                    <div class="row flex-items-lg-middle pb-base pt-base">
+                        <img width="458" height="353" src="images/testimonial-2.jpg" alt="Client photo">
+                        <div class="testimonial-quotation bg-white">
+                            <blockquote class="line-h-base">
+                                <span class="fa fa-quote-left text-black" aria-hidden="true">
+                                </span>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s.
+                                <span class="fa fa-quote-left text-black" aria-hidden="true">
+                                </span>
+                            </blockquote>
+                            <p class="heading text-uppercase font-small-lg font-bold text-black line-h-medium">
+                                NAme Here
+                            </p>
+                            <span class="line-h-base text-orange text-base">
+                                Designation
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
     </section>
-    <section class="submit-comment bg-light-blue">
-        <div class="container pyramids pb-base">
+    <section id="about-us-views" class="our-views bg-light-blue">
+        <div class="container pyramids">
             <div class="row d-block">
                 <header class="page-content-header">
-                    <h1 class="heading font-huge font-extra-bold text-black text-uppercase line-h-medium">Leave your comment</h1>
-                    <h2 class="font-custom line-h-big text-black">Submit your comments now</h2>
+                    <h1 class="heading font-huge font-extra-bold text-black text-uppercase line-h-medium">
+                        News
+                    </h1>
+                    <h2 class="font-custom line-h-big text-black">
+                        Featured News
+                    </h2>
                 </header>
-                <div class="row ">
-                    <form class="col-lg-12">
-                        <ul class="mb-2">
-                            <li class="form-border-b">
-                                <input class="form-name form-item form-control bg-transp border-none text-uppercase" type="text"  name="follow-up[name]" placeholder="Name *">
-                            </li>
-                            <li class="form-border-b">
-                                <input class="form-email form-item form-control bg-transp border-none text-uppercase" type="email"  name="follow-up[email]" placeholder="Email Address *">
-                            </li>
-                            <li class="form-border-b">
-                                <input class="form-phone form-item form-control bg-transp border-none text-uppercase" type="tel"  name="follow-up[phone]" placeholder="PHone number *">
-                            </li>
-                            <li class="form-border-b">
-                                <input class="form-service form-item form-control bg-transp border-none text-uppercase" type="text"  name="follow-up[service]" placeholder="Service *">
-                            </li>
-                            <li class="form-border-b">
-                                <textarea class="form-comment form-item form-control bg-transp border-none resize-none text-uppercase" name="follow-up[comment]" cols="1" rows="11" placeholder="Comment *"></textarea>
-                            </li>
-                        </ul>
-                        <button class="submit-button call-to-action btn hover-transition bg-transp hover-visibility" type="submit" name="follow-up[submit]">Submit Now
-                        </button>
-                    </form>
-                </div>
+                <ul class="concepts">
+                    <li class="concept-item row mb-3">
+                        <img class="concrpt-img col-lg-3" width="263" height="176" src="images/about-us-views-1.jpg" alt="Image">
+                        <div class="col-lg">
+                            <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                Our Mission
+                            </h3>
+                            <p class="line-h-base">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                only five centuries, but also the.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="concept-item row mb-3">
+                        <img class="concrpt-img col-lg-3" width="263" height="176" src="images/about-us-views-2.jpg" alt="Image">
+                        <div class="col-lg">
+                            <h3 class="heading text-uppercase font-large font-bold text-black line-h-medium">
+                                Our Mission
+                            </h3>
+                            <p class="line-h-base">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                only five centuries, but also the.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -215,5 +257,10 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/tether/dist/js/tether.min.js"></script>
 <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $('.carousel').carousel({
+        interval: false
+    })
+</script>
 </body>
 </html>

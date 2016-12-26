@@ -86,6 +86,9 @@ a:hover, a:active {
 .font-small {
   font-size: 12px;
 }
+.font-small-lg {
+  font-size: 13px;
+}
 .font-medium {
   font-size: 15px;
 }
@@ -124,6 +127,9 @@ a:hover, a:active {
 }
 .text-light-orange {
   color: #ffaf36;
+}
+.text-orange {
+  color: #ea0;
 }
 .bg-transp {
   background-color: transparent;
@@ -166,6 +172,9 @@ a:hover, a:active {
 .pb-base {
   padding-bottom: 6.3rem;
 }
+.pt-base {
+  padding-top: 6.3rem;
+}
 .p-rl-base {
   padding-right: 15px;
   padding-left: 15px;
@@ -173,10 +182,6 @@ a:hover, a:active {
 .m-rl-base {
   margin-right: 15px;
   margin-left: 15px;
-}
-
-.pb-pyramids {
-  padding-bottom: 101px;
 }
 .pagination-item {
   display: block;

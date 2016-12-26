@@ -1,6 +1,7 @@
 /*-------------------------------------IMPORTS---------------------------------------*/
 @import "application";
 @import "sprite-home-services";
+@import "clients-section";
 /*----------------------------------------------------------------------------------*/
 .home-banner{
   height: 550px;
@@ -42,40 +43,6 @@
   margin-bottom: 5px;
   .service-item:hover & {
     border-top: 2px solid  #36a8ff;
-  }
-}
-.home-clients-section {
-  .carousel-item {
-    height: 310px;
-  }
-  .carousel-caption {
-    bottom: 20px;
-  }
-  .testimonials {
-    margin-bottom: 4rem;
-    height: 200px;
-  }
-}
-.clients-comma{
-  position: relative;
-  &::before {
-    content: "\275D";
-    position: absolute;
-    top: 30px;
-    left: -15px;
-    font-size: 200px;
-    opacity: 0.1;
-    .testimonial-item:first-child & {
-      color: #1c1c1c;
-    }
-    .testimonial-item:nth-child(2) & {
-      color: #36a8ff;
-      opacity: 0.15;
-    }
-    .testimonial-item:last-child & {
-      color: #ffaf36;
-      opacity: 0.3;
-    }
   }
 }
 .home-news-section {

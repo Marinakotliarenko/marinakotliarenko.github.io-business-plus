@@ -1,0 +1,53 @@
+/*-------------------------------------IMPORTS---------------------------------------*/
+@import "application";
+/*----------------------------------------------------------------------------------*/
+.testimonials-section {
+  .container {
+    position: relative;
+    .comma {
+      position: absolute;
+      top: 40px;
+      right: 35px;
+      font-size: 200px;
+      color: #36a8ff;
+      opacity: 0.15;
+      -ms-transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+  }
+  .testimonial-item {
+    &:nth-child(odd) {
+    }
+    &:nth-child(even) {
+      background-color: #eaeff3;
+    }
+    .container {
+      position: relative;
+      .testimonial-quotation {
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        width: 750px;
+        padding: 50px 55px 35px;
+        border: 1px solid #eaeff3;
+      }
+      blockquote {
+        position: relative;
+        .fa-quote-left {
+          position: absolute;
+          top: -15px;
+          left: -25px;
+          &:last-child {
+            top: 100%;
+            right: -25px;
+            -ms-transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+          }
+        }
+      }
+    }
+  }
+}
+

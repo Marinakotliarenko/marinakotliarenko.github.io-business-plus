@@ -1,0 +1,32 @@
+.boosting {
+  width: 206px;
+  height: 201px;
+  background: url('../images/services-page.jpg') 0 0;
+  .service-item:hover & {
+    background: url('../images/services-page.jpg') 0 -201px;
+  }
+}
+.support {
+  width: 202px;
+  height: 202px;
+  background: url('../images/services-page.jpg') -206px 0;
+  .service-item:hover & {
+    background: url('../images/services-page.jpg') -206px -202px;
+  }
+}
+.analyzing {
+  width: 224px;
+  height: 190px;
+  background: url('../images/services-page.jpg') -408px 0;
+  .service-item:hover & {
+    background: url('../images/services-page.jpg') -208px -190px;
+  }
+}
+.time {
+  width: 202px;
+  height: 202px;
+  background: url('../images/services-page.jpg') -632px 0;
+  .service-item:hover & {
+    background: url('../images/services-page.jpg') -632px -202px;
+  }
+}

@@ -1,0 +1,18 @@
+/*-------------------------------------IMPORTS---------------------------------------*/
+@import "application";
+@import "sprite-services";
+@import "clients-section";
+/*----------------------------------------------------------------------------------*/
+.services-section {
+  .service-item {
+    &:nth-child(odd) .row {
+      @include flex-flow(row);
+    }
+    &:nth-child(even) {
+      background-color: #eaeff3;
+      .row {
+        @include flex-flow(row-reverse);
+      }
+    }
+  }
+}
