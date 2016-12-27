@@ -1,0 +1,21 @@
+/*-------------------------------------IMPORTS---------------------------------------*/
+@import "application";
+/*----------------------------------------------------------------------------------*/
+.error-page {
+  .error-content {
+    height: 500px;
+    .error-type {
+      width: 380px;
+      font-size: 72px;
+      line-height: 72px;
+      font-weight: 300;
+      color: black;
+    }
+    .error-text {
+      width: 530px;
+      height: 31px;
+      border-radius: 50px;
+      padding: 0.6rem;
+    }
+  }
+}

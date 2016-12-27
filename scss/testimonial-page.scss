@@ -50,4 +50,23 @@
     }
   }
 }
+.post-testimonial {
+  .form-item {
+    width: 555px;
+    height: 47px;
+    border: 1px solid #dfe5ea;
+    margin-bottom: 20px;
+    &[placeholder]  {
+      padding: 1em;
+
+    }
+    @include placeholder {
+      color: #585858;
+    }
+  }
+  .form-comment {
+    width: 555px;
+    height: 179px;
+  }
+}
 

@@ -50,10 +50,9 @@
         padding: 1em;
         color: #737476;
       }
-      /*@include placeholder {
-        padding: 1em;
+      @include placeholder {
         color: #737476;
-      }*/
+      }
     }
     .form-border {
       border: 1px solid #373839;
@@ -65,5 +64,11 @@
     .form-comment {
       width: 100%;
     }
+    .call-to-action {
+      &:hover {
+        color: #ea0;
+      }
+    }
   }
+
 }

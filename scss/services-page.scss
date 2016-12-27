@@ -7,11 +7,31 @@
   .service-item {
     &:nth-child(odd) .row {
       @include flex-flow(row);
+      .service-content {
+        margin-left: 4.5rem;
+      }
+
     }
     &:nth-child(even) {
       background-color: #eaeff3;
       .row {
         @include flex-flow(row-reverse);
+        .service-content {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: end;
+          -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+          align-items: flex-end;
+          margin-right: 4.5rem;
+          text-align: right;
+        }
       }
     }
   }

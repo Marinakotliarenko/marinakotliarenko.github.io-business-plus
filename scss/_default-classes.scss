@@ -42,7 +42,6 @@ a:hover, a:active {
   width: 151px;
   height: 51px;
   border: 2px solid #ffaf36;
-  margin-right: -15px;
   font: 700 13px 'Raleway', sans-serif;
   text-transform: uppercase;
   color: #ffaf36;
@@ -71,7 +70,7 @@ a:hover, a:active {
 .font-regular {
   font-weight: 400;
 }
-.font-medium {
+.font-w-medium {
   font-weight: 500;
 }
 .font-semi-bold {
@@ -131,6 +130,9 @@ a:hover, a:active {
 .text-orange {
   color: #ea0;
 }
+.text-blue {
+  color: #36a8ff;
+}
 .bg-transp {
   background-color: transparent;
 }
@@ -183,6 +185,9 @@ a:hover, a:active {
   margin-right: 15px;
   margin-left: 15px;
 }
+.m-r-base-minus {
+  margin-right: -15px;
+}
 .pagination-item {
   display: block;
   width: 51px;
@@ -206,6 +211,9 @@ a:hover, a:active {
   align-items: stretch;
 }
 .flex-column {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .flex-grow-zero {
