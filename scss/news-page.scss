@@ -1,10 +1,51 @@
 /*-------------------------------------IMPORTS---------------------------------------*/
 @import "application";
+@import "quotation";
 /*----------------------------------------------------------------------------------*/
 .news-item {
   &:nth-child(odd) {
   }
   &:nth-child(even) {
     background-color: #eaeff3;
+  }
+  .post-date {
+    position: relative;
+    width: 147px;
+    height: 42px;
+    margin-left: 18px;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -18px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 0 solid transparent;
+      border-bottom: 22px solid transparent;
+      border-right: 18px solid #ffaf36;
+    }
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: -18px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 18px solid transparent;
+      border-right: 0 solid transparent;
+      border-bottom: 22px solid  #ffaf36;
+    }
+  }
+  .quotation{
+    border-left: 4px solid #36a8ff;
+    background-color:  #d1ebff;
+  }
+  .collage {
+    img:first-child {
+      width: 360px;
+      margin-bottom: 30px;
+    }
   }
 }
