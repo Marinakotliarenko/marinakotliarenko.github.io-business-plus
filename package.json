@@ -1,0 +1,22 @@
+{
+  "name": "business-plus",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marinakotliarenko/marinakotliarenko.github.io-business-plus.git"
+  },
+  "author": "Marina Kotliarenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marinakotliarenko/marinakotliarenko.github.io-business-plus/issues"
+  },
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "homepage": "https://github.com/Marinakotliarenko/marinakotliarenko.github.io-business-plus#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.0.0"
+  }
+}
