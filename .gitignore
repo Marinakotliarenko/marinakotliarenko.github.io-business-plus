@@ -2,4 +2,6 @@
 node_modules/
 /.sass-cache/
 bower_components/
-css
+dist/
+npm-debug.log
+

@@ -22,6 +22,6 @@ gulp.task('watch-scss', function(){
 gulp.task('watch-haml', function() {
     gulp.src('app/haml/**/*.haml', {read: false}).
     pipe(watch('app/haml/**/*.haml')).
-    pipe(haml()).
+    pipe(haml().on('error', function(e) { console.log(e.message); })).
     pipe(gulp.dest('dist/html'));
 });
