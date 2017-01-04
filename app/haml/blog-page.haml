@@ -1,0 +1,229 @@
+!!!
+%html{lang:"en"}
+%head
+  %meta{charset: "UTF-8"}
+  %link{rel:"stylesheet", type:"text/css", href:"../../dist/css/normalize.css"}
+  %link{rel:"stylesheet", type:"text/css", href:"../../bower_components/bootstrap/dist/css/bootstrap-flex.min.css"}
+  %link{rel:"stylesheet", type:"text/css", href:"../../dist/css/blog-page.css"}
+  %meta{name:"viewport", content:"width:device-width, initial-scale=1, user-scalable:no, maximum-scale=1"}
+  %link{href:"../../bower_components/google-font-lora/lora.css", rel:"stylesheet"}
+  %link{href:"../../bower_components/google-font-open-sans/openSans.css", rel:"stylesheet"}
+  %link{href:"../../bower_components/google-font-raleway/raleway.css", rel:"stylesheet"}
+  %link{rel:"stylesheet", href:"../../app/fonts/fontello-929d8335/css/fontello.css"}
+  %link{rel:"stylesheet", href:"../../bower_components/simple-line-icons/css/simple-line-icons.css"}
+  %title B PLUS/blog
+  %body
+    .wrapper
+      %header#masthead.site-header.navbar
+        .container
+          .row.flex-items-lg-middle
+            %h1.site-logo
+              %a.navbar-brand{href: "../../index.html"}
+                %img.logo-img{alt: "BUSINESS PLUS", src: "../../app/images/businessplus-logo.png"}
+            %span.navbar-divider.hidden-md-down
+            .company-phone
+              %a.phone{href: "tel:+9978 8856 999"}
+                %span.icon-call-out.text-light-orange{"aria-hidden" => "true"}
+                +1 212-532-1256
+            %nav#site-navigation.main-navigation.flex-items-lg-right.navbar-nav.media{role: "navigation"}
+              %ul.media
+                %li.margin-l-base
+                  %a{href: "../../index.html"} Home
+                %li.margin-l-base
+                  %a{href: "../../about-us-page.html"} About us
+                %li.margin-l-base
+                  %a{href: "../../services-page.html"} services
+                %li.margin-l-base
+                  %a{href: "../../news-page.html"} news
+                %li.margin-l-base
+                  %a.active{href: "../../blog-post-page.html"} blog
+                %li.margin-l-base.dropdown
+                  %a#dropdownMenuLink.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: ""}
+                    pages
+                  .dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
+                    %a.dropdown-item.text-white{href: "../../faq-page.html"} faq
+                    %a.dropdown-item.text-white{href: "../../careers-page.html"} careers
+                    %a.dropdown-item.text-white{href: "../../testimonial-page.html"} Testimonial
+                %li.margin-l-base
+                  %a{href: "../../contact-us-page.html"} Contact Us
+      %section.site-banner
+        %img{alt: "Banner image", src: "../../app/images/layer-19.jpg"}
+      %section#blog.page-content
+        .container.pyramids
+          .row
+            %header.page-content-header
+              %h1.heading.font-huge.font-extra-bold.text-black.text-uppercase.line-h-medium Blog Page
+              %h2.font-custom.line-h-big.text-black Our featured Post
+            %ul
+              %li
+                %article.blog-post.row
+                  %header.blog-post-header.row.col-md-12
+                    %img.rounded-circle.col-lg-1{alt: "Admin image", height: "60", src: "../../app/images/layer-16.jpg", width: "60"}
+                    .col-lg-9
+                      %h1.heading.text-black.text-uppercase.line-h-medium
+                        Blog Heading Here Blog
+                      %p.posted-details.text-proxima.text-dark-gray.text-uppercase.line-h-medium
+                        Posted by: admin,
+                        %time{datetime: "2015-10-11"} October- 11- 2015
+                  %section.blog-post-content
+                    .offset-lg-1.col-lg-11
+                      %img.blog-post-pic{alt: "Blog-picture", height: "334", src: "../../app/images/layer-13.jpg", width: "1042"}
+                      %p.line-h-base
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also
+                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised..
+                  %footer.blog-post-footer.row.col-lg-12.flex-items-lg-between.flex-items-lg-middle
+                    .share-buttons.offset-lg-1.col-lg-6
+                      %p.share.list-inline-item Share :
+                      %ul.social-icons.list-inline-item
+                        %li.social-item.list-inline-item.hover-transition
+                          %a{href: "../../blog-page.html"}
+                            %span.facebook-icon
+                              %i.icon-facebook-circled.share-icon-size{"aria-hidden" => "true"}
+                        %li.social-item.list-inline-item.hover-transition
+                          %a{href: "../../blog-page.html"}
+                            %span.twitter-icon
+                              %i.icon-twitter-circled.share-icon-size{"aria-hidden" => "true"}
+                        %li.social-item.list-inline-item.hover-transition
+                          %a{href: "../../blog-page.html"}
+                            %span.google-plus-icon
+                              %i.icon-gplus-circled.share-icon-size{"aria-hidden" => "true"}
+                    %a.call-to-action.hover-transition.hover-visibility.m-r-base-minus{href: "../../blog-post-page.html"}
+                      read more
+              %li
+                %article.blog-post.row
+                  %header.blog-post-header.media
+                    %img.rounded-circle.col-lg-1{alt: "Admin image", height: "60", src: "../../app/images/layer-16.jpg", width: "60"}
+                    .col-lg-9
+                      %h1.heading.text-black.text-uppercase.line-h-medium
+                        Blog Heading Here Blog Heading Here
+                        Blog Heading Here Blog Heading Here Blog Heading Here Blog Heading Here
+                      %p.posted-details.text-proxima.text-dark-gray.text-uppercase.line-h-medium
+                        Posted by: admin,
+                        %time{datetime: "2015-10-11"} October- 11- 2015
+                  %section.blog-post-content
+                    .offset-lg-1.col-lg-11
+                      %img.blog-post-pic{alt: "Blog-picture", height: "334", src: "../../app/images/layer-14.jpg", width: "1042"}
+                      %p.line-h-base
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also
+                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised..
+                  %footer.blog-post-footer.row.col-lg-12.flex-items-lg-between.flex-items-lg-middle
+                    .share-buttons.offset-lg-1.col-lg-6
+                      %p.share.list-inline-item Share :
+                      %ul.social-icons.list-inline-item
+                        %li.social-item.list-inline-item.hover-transition
+                          %a{href: "../../blog-page.html"}
+                            %span.facebook-icon
+                              %i.icon-facebook-circled.share-icon-size{"aria-hidden" => "true"}
+                        %li.social-item.list-inline-item.hover-transition
+                          %a{href: "../../blog-page.html"}
+                            %span.twitter-icon
+                              %i.icon-twitter-circled.share-icon-size{"aria-hidden" => "true"}
+                        %li.social-item.list-inline-item.hover-transition
+                          %a{href: "../../blog-page.html"}
+                            %span.google-plus-icon
+                              %i.icon-gplus-circled.share-icon-size{"aria-hidden" => "true"}
+                    %a.call-to-action.hover-transition.hover-visibility.m-r-base-minus{href: "../../blog-post-page.html"}
+                      read more
+              %li
+                %article.blog-post.row
+                  %header.blog-post-header.media
+                    %img.rounded-circle.col-lg-1{alt: "Admin image", height: "60", src: "../../app/images/layer-16.jpg", width: "60"}
+                    .col-lg-9
+                      %h1.heading.text-black.text-uppercase.line-h-medium
+                        Blog Heading Here Blog Heading Here
+                        Blog Heading Here Blog Heading Here Blog Heading Here Blog Heading Here
+                      %p.posted-details.text-uppercase.line-h-medium
+                        Posted by: admin,
+                        %time{datetime: "2015-10-11"} October- 11- 2015
+                  %section.blog-post-content
+                    .offset-lg-1.col-lg-11
+                      %img.blog-post-pic{alt: "Blog-picture", height: "334", src: "../../app/images/layer-15.jpg", width: "1042"}
+                      %p.line-h-base
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also
+                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised..
+                  %footer.blog-post-footer.row.col-lg-12.flex-items-lg-between.flex-items-lg-middle
+                    .share-buttons.offset-lg-1.col-lg-6
+                      %p.share.list-inline-item Share :
+                      %ul.social-icons.list-inline-item
+                        %li.social-item.list-inline-item.hover-transition
+                          %a{href: "../../blog-page.html"}
+                            %span.facebook-icon
+                              %i.icon-facebook-circled.share-icon-size{"aria-hidden" => "true"}
+                        %li.social-item.list-inline-item.hover-transition
+                          %a{href: "../../blog-page.html"}
+                            %span.twitter-icon
+                              %i.icon-twitter-circled.share-icon-size{"aria-hidden" => "true"}
+                        %li.social-item.list-inline-item.hover-transition
+                          %a{href: "../../blog-page.html"}
+                            %span.google-plus-icon
+                              %i.icon-gplus-circled.share-icon-size{"aria-hidden" => "true"}
+                    %a.call-to-action.hover-transition.hover-visibility.m-r-base-minus{href: "../../blog-post-page.html"}
+                      read more
+            .pagination.mx-auto
+              %ul.pagination-list.media
+                %li
+                  %a.pagination-item.hover-transition.active{href: "../../blog-page.html"} 1
+                %li
+                  %a.pagination-item.hover-transition{href: "../../blog-page.html"} 2
+                %li
+                  %a.pagination-item.hover-transition{href: "../../blog-page.html"} 3
+      %footer#site-footer.site-footer{role: "contentinfo"}
+        .container
+          .row
+            .col-lg-3
+              %a.logo{href: "../../index.html"}
+                %img{alt: "BUSINESS PLUS", src: "../../app/images/businessplus-logo.png"}/
+              %p.site-footer-copyright 2015 © lawyer.
+              %ul.footer-social-icons.media
+                %li.social-item
+                  %a{href: ""}
+                    %span.facebook-icon.hover-transition
+                      %i.icon-facebook-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+                %li.social-item
+                  %a{href: ""}
+                    %span.twitter-icon.hover-transition
+                      %i.icon-twitter-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+                %li.social-item
+                  %a{href: ""}
+                    %span.google-plus-icon.hover-transition
+                      %i.icon-gplus-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+                %li.social-item
+                  %a{href: ""}
+                    %span.linkedin-icon.hover-transition
+                      %i.icon-linkedin-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+            .col-lg-2.offset-lg-1
+              %h6.heading.text-white.text-uppercase.line-h-medium Navigation
+              %ul.footer-nav
+                %li.footer-nav-item
+                  %a{href: "../../index.html"} Home
+                %li.footer-nav-item
+                  %a{href: "../../about-us-page.html"} About us
+                %li.footer-nav-item
+                  %a{href: "../../services-page.html"} services
+                %li.footer-nav-item
+                  %a{href: "../../testimonial-page.html"} testimonial
+                %li.footer-nav-item
+                  %a{href: "../../blog-page.html"} blog
+                %li.footer-nav-item
+                  %a{href: "../../contact-us-page.html"} Contact Us
+            .col-lg-5.offset-lg-1.quick-contact
+              %h6.heading.text-white.text-uppercase.line-h-medium Quick contact us
+              %form.footer-form{role: "form"}
+                .media
+                  %input#footer-form-name.form-name.form-item.form-control.bg-transp.form-border{name: "follow-up[name]", placeholder: "Name *", type: "text"}/
+                  %input#footer-form-email.form-email.form-item.form-control.bg-transp.form-border{name: "follow-up[email]", placeholder: "Email *", type: "email"}/
+                %textarea#footer-form-comment.form-comment.form-item.form-control.bg-transp.form-border.resize-none{cols: "50", name: "follow-up[comment]", placeholder: "Comment *", rows: "5"}
+                %button.submit-button.call-to-action.btn.hover-transition.bg-transp.text-uppercase.hover-visibility{name: "follow-up[submit]", type: "submit"}
+                  Submit Now
+    %script{src: "bower_components/jquery/dist/jquery.min.js"}
+    %script{src: "bower_components/tether/dist/js/tether.min.js"}
+    %script{src: "bower_components/bootstrap/dist/js/bootstrap.min.js", type: "text/javascript"}

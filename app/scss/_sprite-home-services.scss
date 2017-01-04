@@ -1,32 +1,32 @@
 .boosting {
   width: 57px;
   height: 55px;
-  background: url('../images/home-services-img.png') 0 0;
+  background: url('../../app/images/home-services-img.png') 0 0;
   .service-item:hover & {
-    background: url('../images/home-services-img.png') 0 -55px;
+    background: url('../../app/images/home-services-img.png') 0 -55px;
   }
 }
 .support {
   width: 61px;
   height: 62px;
-  background: url('../images/home-services-img.png') -58px 0;
+  background: url('../../app/images/home-services-img.png') -58px 0;
   .service-item:hover & {
-    background: url('../images/home-services-img.png') -58px -63px;
+    background: url('../../app/images/home-services-img.png') -58px -63px;
   }
 }
 .analyzing {
   width: 58px;
   height: 49px;
-  background: url('../images/home-services-img.png') -120px 0;
+  background: url('../../app/images/home-services-img.png') -120px 0;
   .service-item:hover & {
-    background: url('../images/home-services-img.png') -120px -49px;
+    background: url('../../app/images/home-services-img.png') -120px -49px;
   }
 }
 .time {
   width: 58px;
   height: 57px;
-  background: url('../images/home-services-img.png') -178px 0;
+  background: url('../../app/images/home-services-img.png') -178px 0;
   .service-item:hover & {
-    background: url('../images/home-services-img.png') -178px -58px;
+    background: url('../../app/images/home-services-img.png') -178px -58px;
   }
 }

@@ -18,42 +18,44 @@
         .container
           .row.flex-items-lg-middle
             %h1.site-logo
-              %a.navbar-brand{href: "index.html"}
-                %img.logo-img{alt: "BUSINESS PLUS", src: "app/images/businessplus-logo.png"}/
+              %a.navbar-brand{href: "../../index.html"}
+                %img.logo-img{alt: "BUSINESS PLUS", src: "../../app/images/businessplus-logo.png"}
             %span.navbar-divider.hidden-md-down
             .company-phone
               %a.phone{href: "tel:+9978 8856 999"}
-                %span.icon-call-out.text-light-orange{"aria-hidden" => "true"}
+                %span.icon-call-out.text-light-orange{aria: {hidden:"true"}}
                 +1 212-532-1256
             %nav#site-navigation.main-navigation.flex-items-lg-right.navbar-nav.media{role: "navigation"}
               %ul.media
                 %li.margin-l-base
-                  %a{href: "index.html"} Home
+                  %a{href: "../../index.html"} Home
                 %li.margin-l-base
-                  %a.active{href: "about-us-page.html"} About us
+                  %a.active{href: "../../about-us-page.html"} About us
                 %li.margin-l-base
-                  %a{href: "services-page.html"} services
+                  %a{href: "../../services-page.html"} services
                 %li.margin-l-base
-                  %a{href: "news-page.html"} news
+                  %a{href: "../../news-page.html"} news
                 %li.margin-l-base
-                  %a{href: "blog-page.html"} blog
+                  %a{href: "../../blog-page.html"} blog
                 %li.margin-l-base.dropdown
                   %a#dropdownMenuLink.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: ""}
                     pages
                   .dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
-                    %a.dropdown-item.text-white{href: "faq-page.html"} faq
-                    %a.dropdown-item.text-white{href: "careers-page.html"} careers
-                    %a.dropdown-item.text-white{href: "testimonial-page.html"} Testimonial
+                    %a.dropdown-item.text-white{href: "../../faq-page.html"} faq
+                    %a.dropdown-item.text-white{href: "../../careers-page.html"} careers
+                    %a.dropdown-item.text-white{href: "../../testimonial-page.html"} Testimonial
                 %li.margin-l-base
-                  %a{href: "contact-us-page.html"} Contact Us
+                  %a{href: "../../contact-us-page.html"} Contact Us
       %section.site-banner
-        %img{alt: "Banner image", src: "app/images/banner-about-us.jpg"}/
+        %img{alt: "Banner image", src: "../../app/images/banner-about-us.jpg"}/
       %section#about-us.page-content
         .container
           .row
             %header.page-content-header
-              %h1.heading.font-huge.font-extra-bold.text-black.text-uppercase.line-h-medium About us
-              %h2.font-custom.line-h-big.text-black Our Short Story
+              %h1.heading.font-huge.font-extra-bold.text-black.text-uppercase.line-h-medium
+                About us
+              %h2.font-custom.line-h-big.text-black
+                Our Short Story
             %p.about-us-story.line-h-base
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
               has been the industry's standard dummy text ever since the 1500s, when an unknown printer
@@ -63,11 +65,11 @@
               passages, and more recently with desktop publishing software like Aldus PageMaker including
               versions of Lorem Ipsum.
             %section.actions-section.media.flex-items-lg-center.flex-items-lg-middle
-              %a.call-to-action.col-md-2.hover-transition.hover-visibility{href: "contact-us-page.html"}
+              %a.call-to-action.col-md-2.hover-transition.hover-visibility{href: "../../contact-us-page.html"}
                 Lets Talk
               %a.call-to-action.col-md-2.hover-transition.hover-visibility{href: "#about-us-clients"}
                 Clients
-              %img.actions-section-img{alt: "Image", height: "400", src: "app/images/actions-section.jpg", width: "1140"}/
+              %img.actions-section-img{alt: "Image", height: "400", src: "../../app/images/actions-section.jpg", width: "1140"}
       %section#about-us-views.our-views.bg-light-blue
         .container.pyramids
           .row.d-block
@@ -76,7 +78,7 @@
               %h2.font-custom.line-h-big.text-black Our Concepts
             %ul.concepts
               %li.concept-item.row.mb-3
-                %img.concept-img.col-lg-3{alt: "Image", height: "176", src: "app/images/about-us-views-1.jpg", width: "263"}/
+                %img.concept-img.col-lg-3{alt: "Image", height: "176", src: "../../app/images/about-us-views-1.jpg", width: "263"}
                 .col-lg
                   %h3.heading.text-uppercase.font-large.font-bold.text-black.line-h-medium
                     Our Mission
@@ -86,7 +88,7 @@
                     took a galley of type and scrambled it to make a type specimen book. It has survived not
                     only five centuries, but also the.
               %li.concept-item.row.mb-3
-                %img.concept-img.col-lg-3{alt: "Image", height: "176", src: "app/images/about-us-views-2.jpg", width: "263"}/
+                %img.concept-img.col-lg-3{alt: "Image", height: "176", src: "../../app/images/about-us-views-2.jpg", width: "263"}
                 .col-lg
                   %h3.heading.text-uppercase.font-large.font-bold.text-black.line-h-medium
                     Our Mission
@@ -112,124 +114,124 @@
                     %ul.clients.row
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-1.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-1.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-2.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-2.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-3.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-3.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-4.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-4.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-5.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-5.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-6.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-6.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-7.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-7.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-8.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-8.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-9.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-9.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-10.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-10.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-11.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-11.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-12.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-12.png"}
                 .carousel-item
                   .carousel-caption
                     %ul.clients.row
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-1.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-1.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-2.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-2.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-3.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-3.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-4.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-4.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-5.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-5.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-6.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-6.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-1.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-1.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-2.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-2.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-3.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-3.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-4.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-4.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-5.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-5.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-6.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-6.png"}
                 .carousel-item
                   .carousel-caption
                     %ul.clients.row
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-12.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-12.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-11.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-11.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-10.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-10.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-9.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-9.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-8.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-8.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-7.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-7.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-7.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-7.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-8.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-8.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-9.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-9.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-10.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-10.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-11.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-11.png"}
                       %li.col-lg-2
                         %a.client-item.media.flex-items-lg-center.flex-items-lg-middle.hover-visibility{href: ""}
-                          %img{alt: "Client logo image", src: "app/images/client-12.png"}/
+                          %img{alt: "Client logo image", src: "../../app/images/client-12.png"}
       %footer#site-footer.site-footer{role: "contentinfo"}
         .container
           .row
             .col-lg-3
-              %a.logo{href: "index.html"}
-                %img{alt: "BUSINESS PLUS", src: "app/images/businessplus-logo.png"}/
+              %a.logo{href: "../../index.html"}
+                %img{alt: "BUSINESS PLUS", src: "../../app/images/businessplus-logo.png"}
               %p.site-footer-copyright 2015 © lawyer.
               %ul.footer-social-icons.media
                 %li.social-item
@@ -252,26 +254,26 @@
               %h6.heading.text-white.text-uppercase.line-h-medium Navigation
               %ul.footer-nav
                 %li.footer-nav-item
-                  %a{href: "index.html"} Home
+                  %a{href: "../../index.html"} Home
                 %li.footer-nav-item
-                  %a{href: "about-us-page.html"} About us
+                  %a{href: "../../about-us-page.html"} About us
                 %li.footer-nav-item
-                  %a{href: "services-page.html"} services
+                  %a{href: "../../services-page.html"} services
                 %li.footer-nav-item
-                  %a{href: "testimonial-page.html"} testimonial
+                  %a{href: "../../testimonial-page.html"} testimonial
                 %li.footer-nav-item
-                  %a{href: "blog-page.html"} blog
+                  %a{href: "../../blog-page.html"} blog
                 %li.footer-nav-item
-                  %a{href: "contact-us-page.html"} Contact Us
+                  %a{href: "../../contact-us-page.html"} Contact Us
             .col-lg-5.offset-lg-1.quick-contact
               %h6.heading.text-white.text-uppercase.line-h-medium Quick contact us
               %form.footer-form{role: "form"}
                 .media
-                  %input#footer-form-name.form-name.form-item.form-control.bg-transp.form-border{name: "follow-up[name]", placeholder: "Name *", type: "text"}/
-                  %input#footer-form-email.form-email.form-item.form-control.bg-transp.form-border{name: "follow-up[email]", placeholder: "Email *", type: "email"}/
+                  %input#footer-form-name.form-name.form-item.form-control.bg-transp.form-border{name: "follow-up[name]", placeholder: "Name *", type: "text"}
+                  %input#footer-form-email.form-email.form-item.form-control.bg-transp.form-border{name: "follow-up[email]", placeholder: "Email *", type: "email"}
                 %textarea#footer-form-comment.form-comment.form-item.form-control.bg-transp.form-border.resize-none{cols: "50", name: "follow-up[comment]", placeholder: "Comment *", rows: "5"}
                 %button.submit-button.call-to-action.btn.hover-transition.bg-transp.text-uppercase.hover-visibility{name: "follow-up[submit]", type: "submit"}
                   Submit Now
-    %script{src: "bower_components/jquery/dist/jquery.min.js"}
-    %script{src: "bower_components/tether/dist/js/tether.min.js"}
-    %script{src: "bower_components/bootstrap/dist/js/bootstrap.min.js", type: "text/javascript"}
+    %script{src: "../../bower_components/jquery/dist/jquery.min.js"}
+    %script{src: "../../bower_components/tether/dist/js/tether.min.js"}
+    %script{src: "../../bower_components/bootstrap/dist/js/bootstrap.min.js", type: "text/javascript"}

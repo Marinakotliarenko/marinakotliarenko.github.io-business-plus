@@ -1,0 +1,257 @@
+!!!
+%html{lang:"en"}
+%head
+  %meta{charset: "UTF-8"}
+  %link{rel:"stylesheet", type:"text/css", href:"../../dist/css/normalize.css"}
+  %link{rel:"stylesheet", type:"text/css", href:"../../bower_components/bootstrap/dist/css/bootstrap-flex.min.css"}
+  %link{rel:"stylesheet", type:"text/css", href:"../../dist/css/careers-page.css"}
+  %meta{name:"viewport", content:"width:device-width, initial-scale=1, user-scalable:no, maximum-scale=1"}
+  %link{href:"../../bower_components/google-font-lora/lora.css", rel:"stylesheet"}
+  %link{href:"../../bower_components/google-font-open-sans/openSans.css", rel:"stylesheet"}
+  %link{href:"../../bower_components/google-font-raleway/raleway.css", rel:"stylesheet"}
+  %link{rel:"stylesheet", href:"../../app/fonts/fontello-929d8335/css/fontello.css"}
+  %link{rel:"stylesheet", href:"../../bower_components/simple-line-icons/css/simple-line-icons.css"}
+  %title B PLUS/carers
+  %body
+    .wrapper
+      %header#masthead.site-header.navbar
+        .container
+          .row.flex-items-lg-middle
+            %h1.site-logo
+              %a.navbar-brand{href: "../../index.html"}
+                %img.logo-img{alt: "BUSINESS PLUS", src: "../../app/images/businessplus-logo.png"}
+            %span.navbar-divider.hidden-md-down
+            .company-phone
+              %a.phone{href: "tel:+9978 8856 999"}
+                %span.icon-call-out.text-light-orange{"aria-hidden" => "true"}
+                +1 212-532-1256
+            %nav#site-navigation.main-navigation.flex-items-lg-right.navbar-nav.media{role: "navigation"}
+              %ul.media
+                %li.margin-l-base
+                  %a{href: "../../index.html"} Home
+                %li.margin-l-base
+                  %a{href: "../../about-us-page.html"} About us
+                %li.margin-l-base
+                  %a{href: "../../services-page.html"} services
+                %li.margin-l-base
+                  %a{href: "../../news-page.html"} news
+                %li.margin-l-base
+                  %a{href: "../../blog-page.html"} blog
+                %li.margin-l-base.dropdown
+                  %a#dropdownMenuLink.dropdown-toggle.active{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: ""}
+                    pages
+                  .dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
+                    %a.dropdown-item.text-white{href: "../../faq-page.html"} faq
+                    %a.dropdown-item.text-white{href: "../../careers-page.html"} careers
+                    %a.dropdown-item.text-white{href: "../../testimonial-page.html"} Testimonial
+                %li.margin-l-base
+                  %a{href: "../../contact-us-page.html"} Contact Us
+      %section.site-banner
+        %img{alt: "Banner image", src: "../../app/images/banner-careers.jpg"}
+      %section.careers.page-content
+        .container.pyramids.pb-base
+          .row
+            %aside.careers-img.col-lg-3
+              %img{alt: "Image", height: "157", src: "../../app/images/careers-img.jpg", width: "165"}
+              %img{alt: "Image", height: "157", src: "../../app/images/careers-img-2.png", width: "165"}
+            .col-lg-8.ml-2
+              %header.page-content-header
+                %h1.heading.mt-2.font-huge.font-extra-bold.text-black.text-uppercase.line-h-medium Careers
+                %h2.font-custom.line-h-big.text-black Our Opaning positions
+              %p.line-h-base
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                five centuries.
+      %section.our-offers-section.bg-light-blue.pb-base
+        .container
+          .row.d-block
+            %header.page-content-header
+              %h1.heading.font-huge.font-extra-bold.text-black.text-uppercase.line-h-medium Our offers
+              %h2.font-custom.line-h-big.text-black We offering awesome facts
+            %ul.offers.row
+              %li.offer-item.col-lg-6
+                .row
+                  %span.col-lg-2.icon.icon-smile{"aria-hidden" => "true"}
+                  .col-lg
+                    %h3.heading.text-uppercase.font-large.font-bold.text-black.line-h-medium
+                      Fun environment
+                    %p.line-h-base
+                      Lorem Ipsum is simply dummy text of the printing and type
+                      setting industry. Lorem Ipsum has been the industry'
+              %li.offer-item.col-lg-6
+                .row
+                  %span.col-lg-2.icon.icon-gift{"aria-hidden" => "true"}
+                  .col-lg
+                    %h3.heading.text-uppercase.font-large.font-bold.text-black.line-h-medium
+                      compensation
+                    %p.line-h-base
+                      Lorem Ipsum is simply dummy text of the printing and type
+                      setting industry. Lorem Ipsum has been the industry'
+              %li.offer-item.col-lg-6
+                .row
+                  %span.col-lg-2.icon.icon-coffee{"aria-hidden" => "true"}
+                  .col-lg
+                    %h3.heading.text-uppercase.font-large.font-bold.text-black.line-h-medium
+                      all you need
+                    %p.line-h-base
+                      Lorem Ipsum is simply dummy text of the printing and type
+                      setting industry. Lorem Ipsum has been the industry'
+              %li.offer-item.col-lg-6
+                .row
+                  %span.col-lg-2.icon.icon-plane-outline{"aria-hidden" => "true"}
+                  .col-lg
+                    %h3.heading.text-uppercase.font-large.font-bold.text-black.line-h-medium
+                      pleasure trips
+                    %p.line-h-base
+                      Lorem Ipsum is simply dummy text of the printing and type
+                      setting industry. Lorem Ipsum has been the industry'
+      %section.open-positions-section
+        .container.pyramids.pb-base
+          .row.d-block
+            %header.page-content-header.mb-2
+              %h1.heading.font-huge.font-extra-bold.text-black.text-uppercase.line-h-medium Open positions
+              %h2.font-custom.line-h-big.text-black Some of our featured vacancy
+            #accordion.mb-2{"aria-multiselectable" => "true", role: "tablist"}
+              .vacancy-item.pb-1.pt-1
+                #headingOne.media.flex-items-xl-between{role: "tab"}
+                  %h3.heading.text-uppercase.font-large.font-bold.text-black.line-h-medium
+                    customer relationship manager
+                  %a.collapsed{"aria-controls" => "collapseOne", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseOne"}
+                    %span.icon-arrow-down-circle.hover-visibility.hover-transition{"aria-hidden" => "true"}
+                #collapseOne.collapse{"aria-labelledby" => "headingOne", role: "tabpanel"}
+                  .card-block
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              .vacancy-item.pb-1.pt-1
+                #headingTwo.media.flex-items-xl-between{role: "tab"}
+                  %h3.heading.text-uppercase.font-large.font-bold.text-black.line-h-medium
+                    HR manager
+                  %a.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseTwo"}
+                    %span.icon-arrow-down-circle.text-black.hover-visibility.hover-transition{"aria-hidden" => "true"}
+                #collapseTwo.collapse{"aria-labelledby" => "headingTwo", role: "tabpanel"}
+                  .row
+                    .col-lg-6
+                      %dl.row
+                        %dt.col-lg-4.heading.font-medium.font-w-medium.text-uppercase.text-black Mission
+                        %dd.col-lg-7.line-h-base Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    .col-lg-6
+                      %dl.row
+                        %dt.col-lg-4.heading.font-medium.font-w-medium.text-uppercase.text-black Location
+                        %dd.col-lg-7.line-h-base Washington DC
+                    .col-lg-6
+                      %dl.row
+                        %dt.col-lg-4.heading.font-medium.font-w-medium.text-uppercase.text-black Require
+                        %dd.col-lg-7.line-h-base
+                          %ul
+                            %li
+                              %span.icon.icon-ok.font-small{"aria-hidden" => "true"}
+                              Lorem ipsum dolor sit amet, consectetur.
+                            %li
+                              %span.icon.icon-ok.font-small{"aria-hidden" => "true"}
+                              Praesent in urna at neque varius.
+                            %li
+                              %span.icon.icon-ok.font-small{"aria-hidden" => "true"}
+                              Mauris lobortis orci non viverra semper.
+                            %li
+                              %span.icon.icon-ok.font-small{"aria-hidden" => "true"}
+                              Phasellus tristique sem vitae lorem.
+                    .col-lg-6
+                      %dl.row
+                        %dt.col-lg-4.heading.font-medium.font-w-medium.text-uppercase.text-black Type
+                        %dd.col-lg-7.line-h-base Full-Time Position
+                    .col-lg-6
+                      %dl.row
+                        %dt.col-lg-4.heading.font-medium.font-w-medium.text-uppercase.text-black Other
+                        %dd.col-lg-7.line-h-base
+                          Lorem Ipsum is simply dummy text of the printing and
+                          type setting industry. Lorem Ipsum has been the industry.
+                    .col-lg-6
+                      %dl.row
+                        %dt.col-lg-4.heading.font-medium.font-w-medium.text-uppercase.text-black Other
+                        %dd.col-lg-7.line-h-base
+                          Lorem Ipsum is simply dummy text of the printing and
+                          type setting industry. Lorem Ipsum has been the industry.
+                  .media.flex-items-lg-right.mb-2
+                    %a.call-to-action.hover-transition.hover-visibility.mr-0.text-black.bg-light-orange{href: ""}
+                      apply now
+              .vacancy-item.pb-1.pt-1
+                #headingThree.media.flex-items-xl-between{role: "tab"}
+                  %h3.heading.text-uppercase.font-large.font-bold.text-black.line-h-medium
+                    Customer Success Manager
+                  %a.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseThree"}
+                    %span.icon-arrow-down-circle.text-black.hover-visibility.hover-transition{"aria-hidden" => "true"}
+                #collapseThree.collapse{"aria-labelledby" => "headingThree", role: "tabpanel"}
+                  .card-block
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                    laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                    coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                    anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                    occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                    heard of them accusamus labore sustainable VHS.
+              .vacancy-item.pb-1.pt-1
+                #headingFour.media.flex-items-xl-between{role: "tab"}
+                  %h3.heading.text-uppercase.font-large.font-bold.text-black.line-h-medium
+                    Infrastructure Developer
+                  %a.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseFour"}
+                    %span.icon-arrow-down-circle.text-black.hover-visibility.hover-transition{"aria-hidden" => "true"}
+                #collapseFour.collapse{"aria-labelledby" => "headingThree", role: "tabpanel"}
+                  .card-block
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                    squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                    nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                    squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                    craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                    butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                    synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      %footer#site-footer.site-footer{role: "contentinfo"}
+        .container
+          .row
+            .col-lg-3
+              %a.logo{href: "../../index.html"}
+                %img{alt: "BUSINESS PLUS", src: "../../app/images/businessplus-logo.png"}
+              %p.site-footer-copyright 2015 © lawyer.
+              %ul.footer-social-icons.media
+                %li.social-item
+                  %a{href: ""}
+                    %span.facebook-icon.hover-transition
+                      %i.icon-facebook-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+                %li.social-item
+                  %a{href: ""}
+                    %span.twitter-icon.hover-transition
+                      %i.icon-twitter-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+                %li.social-item
+                  %a{href: ""}
+                    %span.google-plus-icon.hover-transition
+                      %i.icon-gplus-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+                %li.social-item
+                  %a{href: ""}
+                    %span.linkedin-icon.hover-transition
+                      %i.icon-linkedin-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+            .col-lg-2.offset-lg-1
+              %h6.heading.text-white.text-uppercase.line-h-medium Navigation
+              %ul.footer-nav
+                %li.footer-nav-item
+                  %a{href: "../../index.html"} Home
+                %li.footer-nav-item
+                  %a{href: "../../about-us-page.html"} About us
+                %li.footer-nav-item
+                  %a{href: "../../services-page.html"} services
+                %li.footer-nav-item
+                  %a{href: "../../testimonial-page.html"} testimonial
+                %li.footer-nav-item
+                  %a{href: "../../blog-page.html"} blog
+                %li.footer-nav-item
+                  %a{href: "../../contact-us-page.html"} Contact Us
+            .col-lg-5.offset-lg-1.quick-contact
+              %h6.heading.text-white.text-uppercase.line-h-medium Quick contact us
+              %form.footer-form{role: "form"}
+                .media
+                  %input#footer-form-name.form-name.form-item.form-control.bg-transp.form-border{name: "follow-up[name]", placeholder: "Name *", type: "text"}
+                  %input#footer-form-email.form-email.form-item.form-control.bg-transp.form-border{name: "follow-up[email]", placeholder: "Email *", type: "email"}
+                %textarea#footer-form-comment.form-comment.form-item.form-control.bg-transp.form-border.resize-none{cols: "50", name: "follow-up[comment]", placeholder: "Comment *", rows: "5"}
+                %button.submit-button.call-to-action.btn.hover-transition.bg-transp.text-uppercase.hover-visibility{name: "follow-up[submit]", type: "submit"}
+                  Submit Now
+    %script{src: "../../bower_components/jquery/dist/jquery.min.js"}
+    %script{src: "../../bower_components/tether/dist/js/tether.min.js"}
+    %script{src: "../../bower_components/bootstrap/dist/js/bootstrap.min.js", type: "text/javascript"}
