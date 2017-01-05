@@ -1,32 +1,32 @@
 .boosting {
   width: 206px;
   height: 200px;
-  background: url('../images/servises-page.png') 0 -202px;
+  background: url('../../app/images/servises-page.png') 0 -202px;
   .service-item:hover & {
-    background: url('../images/servises-page.png') 0 0;
+    background: url('../../app/images/servises-page.png') 0 0;
   }
 }
 .support {
   width: 200px;
   height: 200px;
-  background: url('../images/servises-page.png') -207px -201px;
+  background: url('../../app/images/servises-page.png') -207px -201px;
   .service-item:hover & {
-    background: url('../images/servises-page.png') -207px 0;
+    background: url('../../app/images/servises-page.png') -207px 0;
   }
 }
 .analyzing {
   width: 224px;
   height: 189px;
-  background: url('../images/servises-page.png') -408px -189px;
+  background: url('../../app/images/servises-page.png') -408px -189px;
   .service-item:hover & {
-    background: url('../images/servises-page.png') -408px 0;
+    background: url('../../app/images/servises-page.png') -408px 0;
   }
 }
 .time {
   width: 202px;
   height: 200px;
-  background: url('../images/servises-page.png') -633px -200px;
+  background: url('../../app/images/servises-page.png') -633px -200px;
   .service-item:hover & {
-    background: url('../images/servises-page.png') -632px 0;
+    background: url('../../app/images/servises-page.png') -632px 0;
   }
 }

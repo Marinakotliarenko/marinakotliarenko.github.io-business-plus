@@ -1,0 +1,186 @@
+!!!
+%html{lang:"en"}
+%head
+  %meta{charset: "UTF-8"}
+  %link{rel:"stylesheet", type:"text/css", href:"../../dist/css/normalize.css"}
+  %link{rel:"stylesheet", type:"text/css", href:"../../bower_components/bootstrap/dist/css/bootstrap-flex.min.css"}
+  %link{rel:"stylesheet", type:"text/css", href:"../../dist/css/services-page.css"}
+  %meta{name:"viewport", content:"width:device-width, initial-scale=1, user-scalable:no, maximum-scale=1"}
+  %link{href:"../../bower_components/google-font-lora/lora.css", rel:"stylesheet"}
+  %link{href:"../../bower_components/google-font-open-sans/openSans.css", rel:"stylesheet"}
+  %link{href:"../../bower_components/google-font-raleway/raleway.css", rel:"stylesheet"}
+  %link{rel:"stylesheet", href:"../../app/fonts/fontello-929d8335/css/fontello.css"}
+  %link{rel:"stylesheet", href:"../../bower_components/simple-line-icons/css/simple-line-icons.css"}
+  %title BUSINESS PLUS/Testimonial
+%body
+  .wrapper
+    %header#masthead.site-header.navbar
+      .container
+        .row.flex-items-lg-middle
+          %h1.site-logo
+            %a.navbar-brand{href: "index.html"}
+              %img.logo-img{alt: "BUSINESS PLUS", src: "../../app/images/businessplus-logo.png"}
+          %span.navbar-divider.hidden-md-down
+          .company-phone
+            %a.phone{href: "tel:+9978 8856 999"}
+              %span.icon-call-out.text-light-orange{"aria-hidden" => "true"}
+              +1 212-532-1256
+          %nav#site-navigation.main-navigation.flex-items-lg-right.navbar-nav.media{role: "navigation"}
+            %ul.media
+              %li.margin-l-base
+                %a{href: "index.html"} Home
+              %li.margin-l-base
+                %a{href: "about-us-page.html"} About us
+              %li.margin-l-base
+                %a{href: "services-page.html"} services
+              %li.margin-l-base
+                %a{href: "news-page.html"} news
+              %li.margin-l-base
+                %a{href: "blog-page.html"} blog
+              %li.margin-l-base.dropdown
+                %a#dropdownMenuLink.dropdown-toggle.active{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: ""}
+                  pages
+                .dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
+                  %a.dropdown-item.text-white{href: "faq-page.html"} faq
+                  %a.dropdown-item.text-white{href: "careers-page.html"} careers
+                  %a.dropdown-item.text-white{href: "testimonial-page.html"} Testimonial
+              %li.margin-l-base
+                %a{href: "contact-us-page.html"} Contact Us
+    %section.site-banner
+      %img{alt: "Banner image", src: "../../app/images/banner-testimonial.jpg"}
+    %section#testimonials.testimonials-section.page-content
+      .container
+        .row
+          %header.page-content-header
+            %h1.heading.font-huge.font-extra-bold.text-black.text-uppercase.line-h-medium
+              Testimonials
+            %h2.font-custom.line-h-big.text-black Our Happy Clients
+          %span.fa.fa-quote-left.comma{"aria-hidden" => "true"}
+      %ul.testimonials.w-100
+        %li.testimonial-item
+          .container.pyramids
+            .row.flex-items-lg-middle.pb-base
+              %img{alt: "Client photo", height: "353", src: "../../app/images/testimonial-1.jpg", width: "458"}
+              .testimonial-quotation.bg-white
+                %blockquote.line-h-base
+                  %span.fa.fa-quote-left.text-black{"aria-hidden" => "true"}
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                  been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                  a galley of type and scrambled it to make a type.
+                  %span.fa.fa-quote-left.bottom.text-black{"aria-hidden" => "true"}
+                %p.heading.text-uppercase.font-small-lg.font-bold.text-black.line-h-medium
+                  NAme Here
+                %span.line-h-base.text-orange.text-base
+                  Designation
+        %li.testimonial-item
+          .container
+            .row.flex-items-lg-middle.pb-base.pt-base
+              %img{alt: "Client photo", height: "353", src: "../../app/images/testimonial-2.jpg", width: "458"}
+              .testimonial-quotation.bg-white
+                %blockquote.line-h-base
+                  %span.fa.fa-quote-left.text-black{"aria-hidden" => "true"}
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                  been the industry's standard dummy text ever since the 1500s.
+                  %span.fa.fa-quote-left.text-black{"aria-hidden" => "true"}
+                %p.heading.text-uppercase.font-small-lg.font-bold.text-black.line-h-medium
+                  NAme Here
+                %span.line-h-base.text-orange.text-base
+                  Designation
+        %li.testimonial-item
+          .container
+            .row.flex-items-lg-middle.pb-base.pt-base
+              %img{alt: "Client photo", height: "353", src: "../../app/images/testimonial-3.jpg", width: "458"}
+              .testimonial-quotation.bg-white
+                %blockquote.line-h-base
+                  %span.fa.fa-quote-left.text-black{"aria-hidden" => "true"}
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                  been the industry's standard dummy text ever since the 1500s.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                  been the industry's standard dummy text ever since the 1500s.
+                  %span.fa.fa-quote-left.text-black{"aria-hidden" => "true"}
+                %p.heading.text-uppercase.font-small-lg.font-bold.text-black.line-h-medium
+                  NAme Here
+                %span.line-h-base.text-orange.text-base
+                  Designation
+        %li.testimonial-item
+          .container
+            .row.flex-items-lg-middle.pb-base.pt-base
+              %img{alt: "Client photo", height: "353", src: "../../app/images/testimonial-4.jpg", width: "458"}
+              .testimonial-quotation.bg-white
+                %blockquote.line-h-base
+                  %span.fa.fa-quote-left.text-black{"aria-hidden" => "true"}
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                  been the industry's standard dummy text ever since the 1500s.
+                  %span.fa.fa-quote-left.text-black{"aria-hidden" => "true"}
+                %p.heading.text-uppercase.font-small-lg.font-bold.text-black.line-h-medium
+                  NAme Here
+                %span.line-h-base.text-orange.text-base
+                  Designation
+    %section.post-testimonial
+      .container.pyramids.pb-base
+        .row.d-block
+          %header.page-content-header
+            %h1.heading.font-huge.font-extra-bold.text-black.text-uppercase.line-h-medium Post Comments
+            %h2.font-custom.line-h-big.text-black
+              Post Your testimonial now
+          %form.testimonial-form{role: "form"}
+            .row
+              .col-lg
+                %input.form-name.form-item.form-control.bg-transp.text-uppercase.border-r-zero{name: "follow-up[name]", placeholder: "Name *", type: "text"}
+                %input.form-email.form-item.form-control.bg-transp.text-uppercase.border-r-zero{name: "follow-up[email]", placeholder: "Email *", type: "email"}
+                %input.form-phone.form-item.form-control.bg-transp.text-uppercase.border-r-zero{name: "follow-up[phone]", placeholder: "PHone number *", type: "tel"}
+              .col-lg
+                %textarea.form-comment.form-item.form-control.bg-transp.text-uppercase.resize-none.border-r-zero{cols: "50", name: "follow-up[comment]", placeholder: "Comment *", rows: "5"}
+                %button.submit-button.call-to-action.btn.hover-transition.bg-transp.hover-visibility.text-uppercase.border-r-zero{name: "follow-up[submit]", type: "submit"}
+                  Submit Now
+    %footer#site-footer.site-footer{role: "contentinfo"}
+      .container
+        .row
+          .col-lg-3
+            %a.logo{href: "index.html"}
+              %img{alt: "BUSINESS PLUS", src: "../../app/images/businessplus-logo.png"}
+            %p.site-footer-copyright 2015 © lawyer.
+            %ul.footer-social-icons.media
+              %li.social-item
+                %a{href: ""}
+                  %span.facebook-icon.hover-transition
+                    %i.icon-facebook-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+              %li.social-item
+                %a{href: ""}
+                  %span.twitter-icon.hover-transition
+                    %i.icon-twitter-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+              %li.social-item
+                %a{href: ""}
+                  %span.google-plus-icon.hover-transition
+                    %i.icon-gplus-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+              %li.social-item
+                %a{href: ""}
+                  %span.linkedin-icon.hover-transition
+                    %i.icon-linkedin-1.social-icon.social-icon-size{"aria-hidden" => "true"}
+          .col-lg-2.offset-lg-1
+            %h6.heading.text-white.text-uppercase.line-h-medium Navigation
+            %ul.footer-nav
+              %li.footer-nav-item
+                %a{href: "index.html"} Home
+              %li.footer-nav-item
+                %a{href: "about-us-page.html"} About us
+              %li.footer-nav-item
+                %a{href: "services-page.html"} services
+              %li.footer-nav-item
+                %a{href: "testimonial-page.html"} testimonial
+              %li.footer-nav-item
+                %a{href: "blog-page.html"} blog
+              %li.footer-nav-item
+                %a{href: "contact-us-page.html"} Contact Us
+          .col-lg-5.offset-lg-1.quick-contact
+            %h6.heading.text-white.text-uppercase.line-h-medium Quick contact us
+            %form.footer-form{role: "form"}
+              .media
+                %input#footer-form-name.form-name.form-item.form-control.bg-transp.form-border{name: "follow-up[name]", placeholder: "Name *", type: "text"}
+                %input#footer-form-email.form-email.form-item.form-control.bg-transp.form-border{name: "follow-up[email]", placeholder: "Email *", type: "email"}
+              %textarea#footer-form-comment.form-comment.form-item.form-control.bg-transp.form-border.resize-none{cols: "50", name: "follow-up[comment]", placeholder: "Comment *", rows: "5"}
+              %button.submit-button.call-to-action.btn.hover-transition.bg-transp.hover-visibility.text-uppercase{name: "follow-up[submit]", type: "submit"}
+                Submit Now
+  %script{src: "../../bower_components/jquery/dist/jquery.min.js"}
+  %script{src: "../../bower_components/tether/dist/js/tether.min.js"}
+  %script{src: "../../bower_components/bootstrap/dist/js/bootstrap.min.js", type: "text/javascript"}
